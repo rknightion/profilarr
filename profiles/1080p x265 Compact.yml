@@ -1,71 +1,80 @@
 name: 1080p x265 Compact
-description: "Profile optimized for 1080p x265 releases with streaming-friendly audio"
+description: Profile optimized for 1080p x265 releases with streaming-friendly audio
 tags:
-  - 1080p
-  - Compact Focused
-  - Lossy Audio
-  - h265
-  - x265
+- 1080p
+- Compact Focused
+- h265
+- x265
 upgradesAllowed: true
 minCustomFormatScore: 10
 upgradeUntilScore: 300
 minScoreIncrement: 50
-language: original
-qualities:
-  - name: HDTV-1080p
-  - id: -1
-    name: WEB 1080p
-    qualities:
-      - name: WEBDL-1080p
-      - name: WEBRip-1080p
-  - name: Bluray-1080p
-upgrade_until:
-  name: Bluray-1080p
 custom_formats:
-  # Hard blocks (-10000)
-  - name: LQ Release Title
-    score: -10000
-  - name: Unwanted Codecs BLOCK
-    score: -10000
-  - name: Line Mic Dubbed
-    score: -10000
-  - name: Bad Dual Groups
-    score: -10000
-  - name: LQ Groups
-    score: -10000
-  - name: "Language: Not English"
-    score: -10000
-  # Negative scores (avoid)
-  - name: DV No Fallback P5 AVOID
-    score: -200
-  - name: TrueHD Atmos AVOID
-    score: -75
-  - name: Dubbed Audio Title
-    score: -50
-  - name: Lossless Audio AVOID
-    score: -50
-  - name: DTS All AVOID
-    score: -50
-  # Positive scores (preferred)
-  - name: DD+ Atmos
-    score: 100
-  - name: x265 HEVC
-    score: 100
-  - name: 10-bit
-    score: 50
-  - name: DV HDR10 Compatible
-    score: 50
-  - name: Trusted Movie Groups
-    score: 25
-  - name: Trusted TV Groups
-    score: 25
-  - name: PROPER REPACK
-    score: 25
-  - name: HDR10Plus
-    score: 25
-  - name: DDP 5.1
-    score: 25
-  - name: HDR10
-    score: 15
-  - name: 5.1 Surround
-    score: 10
+- name: DD+ Atmos
+  score: 100
+- name: x265 HEVC
+  score: 100
+- name: 10-bit
+  score: 50
+- name: DV HDR10 Compatible
+  score: 50
+- name: DDP 5.1
+  score: 25
+- name: HDR10Plus
+  score: 25
+- name: PROPER REPACK
+  score: 25
+- name: Trusted Movie Groups
+  score: 25
+- name: Trusted TV Groups
+  score: 25
+- name: HDR10
+  score: 15
+- name: 5.1 Surround
+  score: 10
+- name: DTS All AVOID
+  score: -50
+- name: Dubbed Audio Title
+  score: -50
+- name: Lossless Audio AVOID
+  score: -50
+- name: TrueHD Atmos AVOID
+  score: -75
+- name: DV No Fallback P5 AVOID
+  score: -200
+- name: Bad Dual Groups
+  score: -10000
+- name: 'Language: Not English'
+  score: -10000
+- name: Line Mic Dubbed
+  score: -10000
+- name: LQ Groups
+  score: -10000
+- name: LQ Release Title
+  score: -10000
+- name: Unwanted Codecs BLOCK
+  score: -10000
+custom_formats_radarr: []
+custom_formats_sonarr: []
+qualities:
+- id: 1
+  name: Raw-HD
+- id: 2
+  name: BR-Disk
+- id: 8
+  name: Remux-1080p
+- id: 10
+  name: Bluray-1080p
+- id: 9
+  name: WEBDL-1080p
+- id: 11
+  name: WEBRip-1080p
+- id: 12
+  name: HDTV-1080p
+- id: 30
+  name: Unknown
+upgrade_until:
+  id: 10
+  name: Bluray-1080p
+  description: 1080p Blu-ray video encoded with lossy compression
+language: original

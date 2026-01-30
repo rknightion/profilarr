@@ -1,71 +1,78 @@
 name: 4K x265 DV HDR
-description: "Profile optimized for 4K x265 releases with Dolby Vision and HDR"
+description: Profile optimized for 4K x265 releases with Dolby Vision and HDR
 tags:
-  - 2160p
-  - HDR
-  - Lossy Audio
-  - h265
-  - x265
+- 2160p
+- HDR
+- h265
+- x265
 upgradesAllowed: true
 minCustomFormatScore: 10
-upgradeUntilScore: 500
+upgradeUntilScore: 400
 minScoreIncrement: 50
-language: original
-qualities:
-  - name: HDTV-2160p
-  - id: -1
-    name: WEB 2160p
-    qualities:
-      - name: WEBDL-2160p
-      - name: WEBRip-2160p
-  - name: Bluray-2160p
-upgrade_until:
-  name: Bluray-2160p
 custom_formats:
-  # Hard blocks (-10000)
-  - name: LQ Release Title
-    score: -10000
-  - name: Unwanted Codecs BLOCK
-    score: -10000
-  - name: Line Mic Dubbed
-    score: -10000
-  - name: Bad Dual Groups
-    score: -10000
-  - name: LQ Groups
-    score: -10000
-  - name: "Language: Not English"
-    score: -10000
-  # Negative scores (avoid)
-  - name: Dubbed Audio Title
-    score: -200
-  - name: DV No Fallback P5 AVOID
-    score: -200
-  - name: Lossless Audio AVOID
-    score: -100
-  - name: DTS All AVOID
-    score: -100
-  - name: TrueHD Atmos AVOID
-    score: -100
-  # Positive scores (preferred)
-  - name: DV HDR10 Compatible
-    score: 200
-  - name: x265 HEVC
-    score: 150
-  - name: HDR10Plus
-    score: 100
-  - name: DD+ Atmos
-    score: 100
-  - name: HDR10
-    score: 75
-  - name: Trusted Movie Groups
-    score: 50
-  - name: Trusted TV Groups
-    score: 50
-  - name: 10-bit
-    score: 25
-  - name: PROPER REPACK
-    score: 25
-  - name: DDP 5.1
-    score: 25
-  - name: 5.1 Surround
-    score: 10
+- name: DV HDR10 Compatible
+  score: 200
+- name: x265 HEVC
+  score: 150
+- name: DD+ Atmos
+  score: 100
+- name: HDR10Plus
+  score: 100
+- name: HDR10
+  score: 75
+- name: Trusted Movie Groups
+  score: 50
+- name: Trusted TV Groups
+  score: 50
+- name: 10-bit
+  score: 25
+- name: DDP 5.1
+  score: 25
+- name: PROPER REPACK
+  score: 25
+- name: 5.1 Surround
+  score: 10
+- name: DTS All AVOID
+  score: -100
+- name: Lossless Audio AVOID
+  score: -100
+- name: TrueHD Atmos AVOID
+  score: -100
+- name: Dubbed Audio Title
+  score: -200
+- name: DV No Fallback P5 AVOID
+  score: -200
+- name: Bad Dual Groups
+  score: -10000
+- name: 'Language: Not English'
+  score: -10000
+- name: Line Mic Dubbed
+  score: -10000
+- name: LQ Groups
+  score: -10000
+- name: LQ Release Title
+  score: -10000
+- name: Unwanted Codecs BLOCK
+  score: -10000
+custom_formats_radarr: []
+custom_formats_sonarr: []
+qualities:
+- id: 1
+  name: Raw-HD
+- id: 2
+  name: BR-Disk
+- id: 3
+  name: Remux-2160p
+- id: 4
+  name: Bluray-2160p
+- id: 5
+  name: WEBDL-2160p
+- id: 6
+  name: WEBRip-2160p
+- id: 7
+  name: HDTV-2160p
+upgrade_until:
+  id: 4
+  name: Bluray-2160p
+  description: 4K Ultra HD Blu-ray video encoded with lossy compression
+language: original
