@@ -1,0 +1,10 @@
+name: Trusted Movie Groups
+description: "Trusted Movie Groups - Matches: (LAMA|PSA|NeoNoir|FLUX|BYNDR|HONE|AOC|hallowed|iVy|FraMeSToR|BHDStudio|DON|CtrlHD|SiCFoI|SPARKS|GECKOS|NCmt)"
+tags:
+  - Release Group
+conditions:
+  - name: Trusted Groups
+    type: release_title
+    pattern: "(?i)\b(LAMA|PSA|NeoNoir|FLUX|BYNDR|HONE|AOC|hallowed|iVy|FraMeSToR|BHDStudio|DON|CtrlHD|SiCFoI|SPARKS|GECKOS|NCmt)\b"
+    required: true
+tests: []

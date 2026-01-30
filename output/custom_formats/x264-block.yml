@@ -1,0 +1,16 @@
+name: x264 BLOCK
+description: "x264 BLOCK custom format with 2 conditions"
+tags:
+  - Codec
+  - Unwanted
+conditions:
+  - name: x264 AVC
+    type: release_title
+    pattern: "(?i)(x264|h\.?264|avc)"
+    required: true
+  - name: Not HEVC
+    type: release_title
+    pattern: "(?i)(x265|h\.?265|hevc)"
+    negate: true
+    required: true
+tests: []

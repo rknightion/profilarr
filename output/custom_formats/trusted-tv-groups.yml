@@ -1,0 +1,10 @@
+name: Trusted TV Groups
+description: "Trusted TV Groups - Matches: (PSA|MeGusta|ELiTE|d3g|iVy|RMTeam|JBENT|MHYSA|NTb|FLUX|BYNDR|HONE|NTG|TOMMY|EDITH|PECULATE|SMURF)"
+tags:
+  - Release Group
+conditions:
+  - name: Trusted Groups
+    type: release_title
+    pattern: "(?i)\b(PSA|MeGusta|ELiTE|d3g|iVy|RMTeam|JBENT|MHYSA|NTb|FLUX|BYNDR|HONE|NTG|TOMMY|EDITH|PECULATE|SMURF)\b"
+    required: true
+tests: []

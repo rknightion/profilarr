@@ -1,0 +1,60 @@
+name: 1080p Streaming
+description: "Optimized for 1080p streaming with x265 preference and good audio"
+upgrade_allowed: true
+cutoff: WEBDL-1080p
+min_format_score: 0
+cutoff_format_score: 500
+
+items:
+  - name: WEB 1080p
+    allowed: true
+    items:
+      - name: WEBDL-1080p
+      - name: WEBRip-1080p
+  - name: HDTV-1080p
+    allowed: true
+  - name: Bluray-1080p
+    allowed: false
+
+format_scores:
+  # Preferred codecs - positive scores
+  - name: x265 HEVC
+    score: 100
+  - name: 10-bit
+    score: 50
+  
+  # Preferred audio - positive scores
+  - name: DD+ Atmos
+    score: 100
+  - name: DDP 5.1
+    score: 75
+  - name: 5.1 Surround
+    score: 25
+  
+  # Avoid but don't block - small negative scores
+  - name: DTS All AVOID
+    score: -100
+  - name: TrueHD Atmos AVOID
+    score: -100
+  - name: Lossless Audio AVOID
+    score: -100
+  - name: DV No Fallback P5 AVOID
+    score: -500
+  - name: Unwanted Formats AVOID
+    score: -500
+  
+  # Hard blocks - very negative scores
+  - name: x264 BLOCK
+    score: -10000
+  - name: BR-DISK Remux BLOCK
+    score: -10000
+  - name: Foreign Language BLOCK
+    score: -10000
+  - name: Dubbed Bad Groups BLOCK
+    score: -10000
+  
+  # Trusted release groups - bonus points
+  - name: Trusted TV Groups
+    score: 50
+  - name: Trusted Movie Groups
+    score: 50

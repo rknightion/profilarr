@@ -1,0 +1,16 @@
+name: DV No Fallback P5 AVOID
+description: "DV No Fallback P5 AVOID custom format with 2 conditions"
+tags:
+  - HDR
+  - Unwanted
+conditions:
+  - name: Has Dolby Vision
+    type: release_title
+    pattern: "(?i)\b(dv|dovi|dolby.?vision)\b"
+    required: true
+  - name: No HDR Mentioned
+    type: release_title
+    pattern: "(?i)\bhdr"
+    negate: true
+    required: true
+tests: []

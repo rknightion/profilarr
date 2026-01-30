@@ -1,0 +1,11 @@
+name: TrueHD Atmos AVOID
+description: "TrueHD Atmos AVOID - Matches: (TrueHD[. ]?Atmos|Atmos[. ]?TrueHD)"
+tags:
+  - Audio
+  - Unwanted
+conditions:
+  - name: TrueHD Atmos
+    type: release_title
+    pattern: "(?i)\b(TrueHD[. ]?Atmos|Atmos[. ]?TrueHD)\b"
+    required: true
+tests: []

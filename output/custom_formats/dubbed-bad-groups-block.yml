@@ -1,0 +1,12 @@
+name: Dubbed Bad Groups BLOCK
+description: "Dubbed Bad Groups BLOCK - Matches: (dubbed|core2hd|MrLss|YIFY|YTS|RARBG|EVO|FGT|STUTTERSHIT|SPARKS)"
+tags:
+  - Unwanted
+  - Release Group
+  - Language
+conditions:
+  - name: Dubbed or Bad Groups
+    type: release_title
+    pattern: "(?i)\b(dubbed|core2hd|MrLss|YIFY|YTS|RARBG|EVO|FGT|STUTTERSHIT|SPARKS)\b"
+    required: true
+tests: []

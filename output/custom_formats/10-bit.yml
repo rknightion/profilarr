@@ -1,0 +1,10 @@
+name: 10-bit
+description: "10-bit - Matches: (10.?bit|hi10p)"
+tags:
+  - Codec
+conditions:
+  - name: 10bit
+    type: release_title
+    pattern: "(?i)(10.?bit|hi10p)"
+    required: true
+tests: []

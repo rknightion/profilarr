@@ -1,0 +1,11 @@
+name: Foreign Language BLOCK
+description: "Foreign Language BLOCK - Matches: (german|french|dutch|swedish|spanish|italian|russian|polish|portuguese|czech|hungarian|nordic|danish|finnish|norwegian|MULTi|DUAL[.-]?AUDIO)"
+tags:
+  - Unwanted
+  - Language
+conditions:
+  - name: Foreign Languages
+    type: release_title
+    pattern: "(?i)\b(german|french|dutch|swedish|spanish|italian|russian|polish|portuguese|czech|hungarian|nordic|danish|finnish|norwegian|MULTi|DUAL[.-]?AUDIO)\b"
+    required: true
+tests: []

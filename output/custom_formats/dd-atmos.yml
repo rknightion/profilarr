@@ -1,0 +1,10 @@
+name: DD+ Atmos
+description: "DD+ Atmos - Matches: (DDP|DD[.+]?P|EAC-?3|E-?AC-?3|DD\+)[. ]?(5[. ]?1[. ]?)?Atmos"
+tags:
+  - Audio
+conditions:
+  - name: DDP Atmos
+    type: release_title
+    pattern: "(?i)\b(DDP|DD[.+]?P|EAC-?3|E-?AC-?3|DD\+)[. ]?(5[. ]?1[. ]?)?Atmos\b"
+    required: true
+tests: []

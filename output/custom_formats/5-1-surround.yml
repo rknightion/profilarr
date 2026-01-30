@@ -1,0 +1,20 @@
+name: 5.1 Surround
+description: "5.1 Surround custom format with 3 conditions"
+tags:
+  - Audio
+conditions:
+  - name: 5.1 Audio
+    type: release_title
+    pattern: "(?i)(5\.?1|6ch)"
+    required: true
+  - name: Not DDP
+    type: release_title
+    pattern: "(?i)(ddp|dd\+|eac3)"
+    negate: true
+    required: true
+  - name: Not Atmos
+    type: release_title
+    pattern: "(?i)\batmos\b"
+    negate: true
+    required: true
+tests: []

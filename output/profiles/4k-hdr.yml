@@ -1,0 +1,66 @@
+name: 4K HDR
+description: "4K with HDR preference, DV compatible, streaming-optimized audio"
+upgrade_allowed: true
+cutoff: WEBDL-2160p
+min_format_score: 0
+cutoff_format_score: 1000
+
+items:
+  - name: WEB 2160p
+    allowed: true
+    items:
+      - name: WEBDL-2160p
+      - name: WEBRip-2160p
+  - name: Bluray-2160p
+    allowed: false
+
+format_scores:
+  # HDR scoring - prioritize DV with HDR10 fallback
+  - name: DV HDR10 Compatible
+    score: 500
+  - name: HDR10Plus
+    score: 200
+  - name: HDR10
+    score: 100
+  
+  # Codec preferences
+  - name: x265 HEVC
+    score: 100
+  - name: 10-bit
+    score: 50
+  
+  # Audio preferences (streaming-friendly)
+  - name: DD+ Atmos
+    score: 100
+  - name: DDP 5.1
+    score: 75
+  - name: 5.1 Surround
+    score: 25
+  
+  # Avoid - moderate negative scores
+  - name: DV No Fallback P5 AVOID
+    score: -500
+  - name: DTS All AVOID
+    score: -100
+  - name: TrueHD Atmos AVOID
+    score: -100
+  - name: Lossless Audio AVOID
+    score: -100
+  - name: Unwanted Formats AVOID
+    score: -500
+  
+  # Hard blocks
+  - name: x264 BLOCK
+    score: -10000
+  - name: BR-DISK Remux BLOCK
+    score: -10000
+  - name: Foreign Language BLOCK
+    score: -10000
+  - name: Dubbed Bad Groups BLOCK
+    score: -10000
+  
+  # Trusted release groups
+  - name: Trusted TV Groups
+    score: 50
+  - name: Trusted Movie Groups
+    score: 50

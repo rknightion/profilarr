@@ -1,0 +1,11 @@
+name: Lossless Audio AVOID
+description: "Lossless Audio AVOID - Matches: (TrueHD|DTS-?HD[. ]?MA|FLAC|PCM|LPCM)"
+tags:
+  - Audio
+  - Unwanted
+conditions:
+  - name: Lossless Audio Formats
+    type: release_title
+    pattern: "(?i)\b(TrueHD|DTS-?HD[. ]?MA|FLAC|PCM|LPCM)\b"
+    required: true
+tests: []
