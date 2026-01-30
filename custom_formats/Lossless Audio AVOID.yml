@@ -2,6 +2,7 @@ name: Lossless Audio AVOID
 description: "Matches lossless audio formats - large file sizes"
 tags:
   - Audio
+  - Lossless
   - Unwanted
 conditions:
   - name: Lossless Audio Formats

@@ -3,3 +3,4 @@ pattern: '(?i)\batmos\b'
 description: "Matches any Atmos audio release"
 tags:
   - Audio
+  - Enhancement

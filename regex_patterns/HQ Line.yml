@@ -2,5 +2,5 @@ name: HQ Line
 pattern: '(?i)\b(HQ[ ._-]?LINE)\b'
 description: "Matches HQ line audio releases"
 tags:
+  - Audio
   - Language
-  - LQ

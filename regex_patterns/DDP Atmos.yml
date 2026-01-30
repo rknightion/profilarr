@@ -3,3 +3,4 @@ pattern: '(?i)\b(DDP|DD[.+]?P|EAC-?3|E-?AC-?3|DD\+)[. ]?(5[. ]?1[. ]?)?Atmos\b'
 description: "Matches Dolby Digital Plus Atmos releases"
 tags:
   - Audio
+  - Enhancement

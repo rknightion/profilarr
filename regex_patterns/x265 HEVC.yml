@@ -3,3 +3,4 @@ pattern: '(?i)(x265|h\.?265|hevc)'
 description: "Matches x265/H.265/HEVC codec releases"
 tags:
   - Codec
+  - Encoder

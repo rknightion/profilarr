@@ -2,6 +2,8 @@ name: DV HDR10 Compatible
 description: "Matches Dolby Vision releases with HDR10 fallback"
 tags:
   - HDR
+  - Colour Grade
+  - Enhancement
 conditions:
   - name: Dolby Vision
     type: release_title

@@ -1,29 +1,26 @@
-name: Radarr - 1080p x265 Compact
-description: "Radarr profile optimized for 1080p x265 releases with streaming-friendly audio"
+name: 4K x265 DV HDR
+description: "Profile optimized for 4K x265 releases with Dolby Vision and HDR"
+tags:
+  - 2160p
+  - HDR
+  - Lossy Audio
+  - h265
+  - x265
 upgradesAllowed: true
 minCustomFormatScore: 10
-upgradeUntilScore: 300
+upgradeUntilScore: 500
 minScoreIncrement: 50
 language: original
 qualities:
-  - id: 9
-    name: HDTV-1080p
+  - name: HDTV-2160p
   - id: -1
-    name: WEB 1080p
+    name: WEB 2160p
     qualities:
-      - id: 3
-        name: WEBDL-1080p
-      - id: 15
-        name: WEBRip-1080p
-  - id: 22
-    name: BR-DISK
-  - id: 7
-    name: Bluray-1080p
-  - id: 10
-    name: Raw-HD
+      - name: WEBDL-2160p
+      - name: WEBRip-2160p
+  - name: Bluray-2160p
 upgrade_until:
-  id: 7
-  name: Bluray-1080p
+  name: Bluray-2160p
 custom_formats:
   # Hard blocks (-10000)
   - name: LQ Release Title
@@ -39,36 +36,36 @@ custom_formats:
   - name: "Language: Not English"
     score: -10000
   # Negative scores (avoid)
+  - name: Dubbed Audio Title
+    score: -200
   - name: DV No Fallback P5 AVOID
     score: -200
-  - name: TrueHD Atmos AVOID
-    score: -75
-  - name: Dubbed Audio Title
-    score: -50
   - name: Lossless Audio AVOID
-    score: -50
+    score: -100
   - name: DTS All AVOID
-    score: -50
+    score: -100
+  - name: TrueHD Atmos AVOID
+    score: -100
   # Positive scores (preferred)
+  - name: DV HDR10 Compatible
+    score: 200
+  - name: x265 HEVC
+    score: 150
+  - name: HDR10Plus
+    score: 100
   - name: DD+ Atmos
     score: 100
-  - name: x265 HEVC
-    score: 100
-  - name: 10-bit
-    score: 50
-  - name: DV HDR10 Compatible
-    score: 50
+  - name: HDR10
+    score: 75
   - name: Trusted Movie Groups
-    score: 25
+    score: 50
   - name: Trusted TV Groups
+    score: 50
+  - name: 10-bit
     score: 25
   - name: PROPER REPACK
     score: 25
-  - name: HDR10Plus
-    score: 25
   - name: DDP 5.1
     score: 25
-  - name: HDR10
-    score: 15
   - name: 5.1 Surround
     score: 10

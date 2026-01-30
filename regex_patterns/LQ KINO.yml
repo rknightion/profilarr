@@ -2,4 +2,4 @@ name: LQ KINO
 pattern: '\b(KINO)\b'
 description: "Matches KINO releases"
 tags:
-  - LQ
+  - Banned

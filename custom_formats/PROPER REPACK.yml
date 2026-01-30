@@ -1,7 +1,8 @@
 name: PROPER REPACK
 description: "Matches proper/repack releases"
 tags:
-  - Release
+  - Repack
+  - Flag
 conditions:
   - name: Proper Repack
     type: release_title

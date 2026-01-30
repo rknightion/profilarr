@@ -3,3 +3,4 @@ pattern: '(?i)\b(AV1)\b'
 description: "Matches AV1 codec releases"
 tags:
   - Codec
+  - Encoder

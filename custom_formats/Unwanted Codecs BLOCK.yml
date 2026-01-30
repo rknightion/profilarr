@@ -2,7 +2,7 @@ name: Unwanted Codecs BLOCK
 description: "Blocks unwanted codecs - x264, AV1, XviD, DivX, MPEG-2, VC-1, WMV"
 tags:
   - Codec
-  - Unwanted
+  - Banned
 conditions:
   - name: x264 AVC
     type: release_title

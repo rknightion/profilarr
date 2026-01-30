@@ -2,6 +2,8 @@ name: HDR10Plus
 description: "Matches HDR10+ dynamic metadata releases"
 tags:
   - HDR
+  - Colour Grade
+  - Enhancement
 conditions:
   - name: HDR10+
     type: release_title

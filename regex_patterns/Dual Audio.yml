@@ -2,4 +2,5 @@ name: Dual Audio
 pattern: '(?i)\b(DUAL[._-]?AUDIO)\b'
 description: "Matches dual audio releases"
 tags:
+  - Audio
   - Language

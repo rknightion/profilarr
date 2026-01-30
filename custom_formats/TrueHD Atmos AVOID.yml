@@ -2,6 +2,8 @@ name: TrueHD Atmos AVOID
 description: "Matches TrueHD Atmos releases - large lossless audio"
 tags:
   - Audio
+  - Lossless
+  - Enhancement
   - Unwanted
 conditions:
   - name: TrueHD Atmos

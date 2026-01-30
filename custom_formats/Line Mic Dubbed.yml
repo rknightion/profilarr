@@ -1,8 +1,9 @@
 name: Line Mic Dubbed
 description: "Blocks line/mic dubbed releases - poor audio quality"
 tags:
+  - Audio
   - Language
-  - Unwanted
+  - Banned
 conditions:
   - name: Line Dub
     type: release_title

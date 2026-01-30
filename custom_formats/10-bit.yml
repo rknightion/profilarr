@@ -2,6 +2,7 @@ name: 10-bit
 description: "Matches 10-bit color depth releases for better color gradients"
 tags:
   - Codec
+  - Enhancement
 conditions:
   - name: 10-bit
     type: release_title

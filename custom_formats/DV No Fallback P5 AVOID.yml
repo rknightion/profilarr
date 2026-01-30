@@ -2,6 +2,7 @@ name: DV No Fallback P5 AVOID
 description: "Matches DV Profile 5 releases without HDR10 fallback - avoid for compatibility"
 tags:
   - HDR
+  - Colour Grade
   - Unwanted
 conditions:
   - name: Has Dolby Vision

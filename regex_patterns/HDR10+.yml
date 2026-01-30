@@ -3,3 +3,5 @@ pattern: '(?i)(hdr10\+|hdr10plus)'
 description: "Matches HDR10+ dynamic metadata releases"
 tags:
   - HDR
+  - Colour Grade
+  - Enhancement

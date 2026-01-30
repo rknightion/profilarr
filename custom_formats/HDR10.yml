@@ -2,6 +2,8 @@ name: HDR10
 description: "Matches standard HDR10 releases (excludes DV and HDR10+)"
 tags:
   - HDR
+  - Colour Grade
+  - Enhancement
 conditions:
   - name: Has HDR10
     type: release_title

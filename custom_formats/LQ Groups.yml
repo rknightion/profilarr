@@ -2,7 +2,7 @@ name: LQ Groups
 description: "Blocks known low quality release groups"
 tags:
   - Release Group
-  - Unwanted
+  - Banned
 include_in_rename: true
 conditions:
   - name: FGT

@@ -1,7 +1,9 @@
 name: Dubbed Audio Title
 description: "Matches dubbed/dual/multi audio releases"
 tags:
+  - Audio
   - Language
+  - Unwanted
 conditions:
   - name: Dubbed
     type: release_title

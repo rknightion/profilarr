@@ -2,4 +2,4 @@ name: LQ TeeWee
 pattern: '\b(TeeWee)\b'
 description: "Matches TeeWee releases"
 tags:
-  - LQ
+  - Banned

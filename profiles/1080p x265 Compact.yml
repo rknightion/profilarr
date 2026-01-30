@@ -1,26 +1,25 @@
-name: Sonarr - 1080p x265 Compact
-description: "Sonarr profile optimized for 1080p x265 releases with streaming-friendly audio"
+name: 1080p x265 Compact
+description: "Profile optimized for 1080p x265 releases with streaming-friendly audio"
+tags:
+  - 1080p
+  - Compact Focused
+  - Lossy Audio
+  - h265
+  - x265
 upgradesAllowed: true
 minCustomFormatScore: 10
 upgradeUntilScore: 300
 minScoreIncrement: 50
 language: original
 qualities:
-  - id: 9
-    name: HDTV-1080p
+  - name: HDTV-1080p
   - id: -1
     name: WEB 1080p
     qualities:
-      - id: 3
-        name: WEBDL-1080p
-      - id: 15
-        name: WEBRip-1080p
-  - id: 7
-    name: Bluray-1080p
-  - id: 10
-    name: Raw-HD
+      - name: WEBDL-1080p
+      - name: WEBRip-1080p
+  - name: Bluray-1080p
 upgrade_until:
-  id: 7
   name: Bluray-1080p
 custom_formats:
   # Hard blocks (-10000)

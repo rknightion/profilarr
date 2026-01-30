@@ -2,7 +2,7 @@ name: Bad Dual Groups
 description: "Blocks release groups known for bad dual audio releases"
 tags:
   - Release Group
-  - Unwanted
+  - Banned
 conditions:
   - name: MULTiPLY
     type: release_group

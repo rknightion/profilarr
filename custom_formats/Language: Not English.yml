@@ -2,7 +2,7 @@ name: "Language: Not English"
 description: "Blocks non-English releases"
 tags:
   - Language
-  - Unwanted
+  - Banned
 conditions:
   - name: Not English
     type: language

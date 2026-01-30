@@ -3,3 +3,5 @@ pattern: '(?i)\b(dv|dovi|dolby.?vision)\b'
 description: "Matches Dolby Vision HDR releases"
 tags:
   - HDR
+  - Colour Grade
+  - Enhancement

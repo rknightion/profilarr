@@ -2,4 +2,4 @@ name: LQ Tigole
 pattern: '\b(Tigole)\b'
 description: "Matches Tigole releases"
 tags:
-  - LQ
+  - Banned

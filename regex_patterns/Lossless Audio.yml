@@ -3,3 +3,4 @@ pattern: '(?i)\b(TrueHD|DTS-?HD[. ]?MA|FLAC|PCM|LPCM)\b'
 description: "Matches lossless audio formats"
 tags:
   - Audio
+  - Lossless

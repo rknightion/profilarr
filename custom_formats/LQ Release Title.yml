@@ -1,7 +1,7 @@
 name: LQ Release Title
 description: "Blocks low quality releases by title patterns"
 tags:
-  - Unwanted
+  - Banned
 include_in_rename: true
 conditions:
   - name: 1XBET
