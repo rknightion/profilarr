@@ -1,27 +1,28 @@
 name: Sonarr - 1080p x265 Compact
 description: "Sonarr profile optimized for 1080p x265 releases with streaming-friendly audio"
-upgrade_allowed: true
-min_format_score: 10
-cutoff_format_score: 300
-min_upgrade_format_score: 50
-language: Original
-
+upgradesAllowed: true
+minCustomFormatScore: 10
+upgradeUntilScore: 300
+minScoreIncrement: 50
+language: original
 qualities:
-  - name: HDTV-1080p
-    allowed: true
-  - name: WEB 1080p
-    allowed: true
-    items:
-      - WEBDL-1080p
-      - WEBRip-1080p
-  - name: BR-DISK
-    allowed: true
-  - name: Bluray-1080p
-    allowed: true
-  - name: Raw-HD
-    allowed: true
-
-format_scores:
+  - id: 9
+    name: HDTV-1080p
+  - id: -1
+    name: WEB 1080p
+    qualities:
+      - id: 3
+        name: WEBDL-1080p
+      - id: 15
+        name: WEBRip-1080p
+  - id: 7
+    name: Bluray-1080p
+  - id: 10
+    name: Raw-HD
+upgrade_until:
+  id: 7
+  name: Bluray-1080p
+custom_formats:
   # Hard blocks (-10000)
   - name: LQ Release Title
     score: -10000
@@ -35,7 +36,6 @@ format_scores:
     score: -10000
   - name: "Language: Not English"
     score: -10000
-
   # Negative scores (avoid)
   - name: DV No Fallback P5 AVOID
     score: -200
@@ -47,7 +47,6 @@ format_scores:
     score: -50
   - name: DTS All AVOID
     score: -50
-
   # Positive scores (preferred)
   - name: DD+ Atmos
     score: 100

@@ -1,29 +1,32 @@
 name: Radarr - 4K x265 DV HDR
 description: "Radarr profile optimized for 4K x265 releases with Dolby Vision and HDR"
-upgrade_allowed: true
-min_format_score: 10
-cutoff_format_score: 500
-min_upgrade_format_score: 50
-language: Original
-
+upgradesAllowed: true
+minCustomFormatScore: 10
+upgradeUntilScore: 500
+minScoreIncrement: 50
+language: original
 qualities:
-  - name: HDTV-2160p
-    allowed: true
-  - name: Raw-HD
-    allowed: true
-  - name: BR-DISK
-    allowed: true
-  - name: WEB 2160p
-    allowed: true
-    items:
-      - WEBDL-2160p
-      - WEBRip-2160p
-  - name: Bluray-2160p
-    allowed: true
-  - name: Remux-2160p
-    allowed: true
-
-format_scores:
+  - id: 16
+    name: HDTV-2160p
+  - id: 10
+    name: Raw-HD
+  - id: 22
+    name: BR-DISK
+  - id: -1
+    name: WEB 2160p
+    qualities:
+      - id: 18
+        name: WEBDL-2160p
+      - id: 17
+        name: WEBRip-2160p
+  - id: 19
+    name: Bluray-2160p
+  - id: 31
+    name: Remux-2160p
+upgrade_until:
+  id: 19
+  name: Bluray-2160p
+custom_formats:
   # Hard blocks (-10000)
   - name: LQ Release Title
     score: -10000
@@ -37,7 +40,6 @@ format_scores:
     score: -10000
   - name: "Language: Not English"
     score: -10000
-  
   # Negative scores (avoid)
   - name: Dubbed Audio Title
     score: -200
@@ -49,7 +51,6 @@ format_scores:
     score: -100
   - name: TrueHD Atmos AVOID
     score: -100
-  
   # Positive scores (preferred)
   - name: DV HDR10 Compatible
     score: 200
