@@ -1,5 +1,5 @@
-name: 1080p x265 Compact
-description: "Optimized for 1080p x265 releases with streaming-friendly audio"
+name: Sonarr - 1080p x265 Compact
+description: "Sonarr profile optimized for 1080p x265 releases with streaming-friendly audio"
 upgrade_allowed: true
 min_format_score: 10
 cutoff_format_score: 300
@@ -35,7 +35,7 @@ format_scores:
     score: -10000
   - name: "Language: Not English"
     score: -10000
-  
+
   # Negative scores (avoid)
   - name: DV No Fallback P5 AVOID
     score: -200
@@ -47,7 +47,7 @@ format_scores:
     score: -50
   - name: DTS All AVOID
     score: -50
-  
+
   # Positive scores (preferred)
   - name: DD+ Atmos
     score: 100

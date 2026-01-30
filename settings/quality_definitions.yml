@@ -41,7 +41,7 @@ quality_definitions:
       min: 0
       max: 100
       preferred: 95
-    
+
     # 480p Web
     WEBDL-480p:
       min: 0
@@ -59,7 +59,7 @@ quality_definitions:
       min: 0
       max: 100
       preferred: 95
-    
+
     # 720p
     HDTV-720p:
       min: 0
@@ -77,7 +77,7 @@ quality_definitions:
       min: 0
       max: 100
       preferred: 95
-    
+
     # 1080p - Custom sizes for compact x265
     HDTV-1080p:
       min: 5
@@ -99,7 +99,7 @@ quality_definitions:
       min: 0
       max: 60
       preferred: 20
-    
+
     # 2160p/4K - Custom sizes
     HDTV-2160p:
       min: 20
@@ -121,7 +121,7 @@ quality_definitions:
       min: 20
       max: 250
       preferred: 150
-    
+
     # BR-DISK and Raw-HD
     BR-DISK:
       min: 20
@@ -131,3 +131,104 @@ quality_definitions:
       min: 20
       max: 250
       preferred: 150
+
+  sonarr:
+    # SD Qualities
+    Unknown:
+      min: 1
+      max: 60
+      preferred: 18
+    SDTV:
+      min: 2
+      max: 40
+      preferred: 18
+    DVD:
+      min: 2
+      max: 40
+      preferred: 18
+
+    # 480p
+    WEBRip-480p:
+      min: 2
+      max: 40
+      preferred: 18
+    WEBDL-480p:
+      min: 2
+      max: 40
+      preferred: 18
+    Bluray-480p:
+      min: 2
+      max: 40
+      preferred: 18
+    Bluray-576p:
+      min: 2
+      max: 40
+      preferred: 18
+
+    # 720p
+    HDTV-720p:
+      min: 3
+      max: 40
+      preferred: 18
+    WEBRip-720p:
+      min: 3
+      max: 40
+      preferred: 18
+    WEBDL-720p:
+      min: 3
+      max: 40
+      preferred: 18
+    Bluray-720p:
+      min: 4
+      max: 40
+      preferred: 18
+
+    # 1080p
+    HDTV-1080p:
+      min: 4.5
+      max: 60
+      preferred: 18
+    WEBRip-1080p:
+      min: 4.5
+      max: 60
+      preferred: 18
+    WEBDL-1080p:
+      min: 4.5
+      max: 60
+      preferred: 18
+    Bluray-1080p:
+      min: 4.5
+      max: 60
+      preferred: 18
+    Bluray-1080p Remux:
+      min: 4.5
+      max: 60
+      preferred: 18
+
+    # Raw-HD
+    Raw-HD:
+      min: 5
+      max: 60
+      preferred: 18
+
+    # 2160p/4K
+    HDTV-2160p:
+      min: 4.5
+      max: 180
+      preferred: 18
+    WEBRip-2160p:
+      min: 4.5
+      max: 180
+      preferred: 16
+    WEBDL-2160p:
+      min: 4.5
+      max: 180
+      preferred: 16
+    Bluray-2160p:
+      min: 4.5
+      max: 180
+      preferred: 16
+    Bluray-2160p Remux:
+      min: 4.5
+      max: 180
+      preferred: 16

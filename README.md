@@ -1,12 +1,12 @@
 # Profilarr Database
 
-Exported from **Radarr v6.0.4.10291** on 2026-01-30
+Configuration database for **Radarr** and **Sonarr** - exported and customized for x265 compact releases.
 
 ## Structure
 
 ```
 .
-├── custom_formats/          # 22 custom format definitions
+├── custom_formats/          # 22 custom format definitions (shared)
 │   ├── 10-bit.yml
 │   ├── 5-1-surround.yml
 │   ├── bad-dual-groups.yml
@@ -29,12 +29,14 @@ Exported from **Radarr v6.0.4.10291** on 2026-01-30
 │   ├── trusted-tv-groups.yml
 │   ├── unwanted-codecs-block.yml
 │   └── x265-hevc.yml
-├── profiles/                # 2 quality profiles
-│   ├── 1080p-x265-compact.yml
-│   └── 4k-x265-dv-hdr.yml
+├── profiles/                # Quality profiles
+│   ├── radarr-1080p-x265-compact.yml
+│   ├── radarr-4k-x265-dv-hdr.yml
+│   ├── sonarr-1080p-x265-compact.yml
+│   └── sonarr-4k-x265-dv-hdr.yml
 ├── settings/                # Configuration settings
 │   ├── naming.yml
-│   └── quality_definitions.yml
+│   └── quality_definitions.yml  # Contains both radarr and sonarr sections
 └── README.md
 ```
 
@@ -88,19 +90,41 @@ Exported from **Radarr v6.0.4.10291** on 2026-01-30
 
 ## Quality Profiles
 
-### 1080p x265 Compact
-- **Target**: Efficient 1080p releases with x265 codec
+### Radarr Profiles
+
+#### Radarr - 1080p x265 Compact
+- **Target**: Efficient 1080p movie releases with x265 codec
 - **Min Score**: 10
 - **Cutoff Score**: 300
 - **Priorities**: x265 (+100), DD+ Atmos (+100), 10-bit (+50), DV HDR10 (+50)
 - **Blocks**: x264/AV1, LQ groups, non-English
 
-### 4K x265 DV HDR
-- **Target**: Premium 4K releases with HDR
+#### Radarr - 4K x265 DV HDR
+- **Target**: Premium 4K movie releases with HDR
 - **Min Score**: 10
 - **Cutoff Score**: 500
 - **Priorities**: DV HDR10 (+200), x265 (+150), HDR10+ (+100), DD+ Atmos (+100)
 - **Blocks**: Same as 1080p, stricter on dubbed content
+
+### Sonarr Profiles
+
+#### Sonarr - 1080p x265 Compact
+- **Target**: Efficient 1080p TV releases with x265 codec
+- **Min Score**: 10
+- **Cutoff Score**: 300
+- **Priorities**: x265 (+100), DD+ Atmos (+100), 10-bit (+50), DV HDR10 (+50)
+- **Blocks**: x264/AV1, LQ groups, non-English
+
+#### Sonarr - 4K x265 DV HDR
+- **Target**: Premium 4K TV releases with HDR
+- **Min Score**: 10
+- **Cutoff Score**: 500
+- **Priorities**: DV HDR10 (+200), x265 (+150), HDR10+ (+100), DD+ Atmos (+100)
+- **Blocks**: Same as 1080p, stricter on dubbed content
+
+## Quality Definitions
+
+Quality size limits (MB/minute) are configured separately for Radarr and Sonarr in `settings/quality_definitions.yml`. Sonarr uses slightly lower bitrates suitable for TV content.
 
 ## Usage
 
@@ -109,14 +133,14 @@ Exported from **Radarr v6.0.4.10291** on 2026-01-30
 1. Push this directory to a private GitHub repository
 2. In Profilarr, add your repository URL
 3. Use a Personal Access Token for private repo authentication
-4. Add your Radarr instances with their API keys
+4. Add your Radarr/Sonarr instances with their API keys
 5. Sync profiles and custom formats
 
 ### Manual Import
 
-Custom formats can be imported directly into Radarr:
+Custom formats can be imported directly into Radarr/Sonarr:
 1. Convert YAML back to JSON if needed
-2. Use Radarr's Settings → Custom Formats → Import
+2. Use Settings → Custom Formats → Import
 
 ## File Format Reference
 
@@ -155,5 +179,20 @@ format_scores:
     score: 100
 ```
 
+### Quality Definitions YAML Structure
+```yaml
+quality_definitions:
+  radarr:
+    Quality-Name:
+      min: 0
+      max: 100
+      preferred: 95
+  sonarr:
+    Quality-Name:
+      min: 0
+      max: 100
+      preferred: 95
+```
+
 ---
-*Generated from live Radarr instance*
+*Configuration database for Radarr and Sonarr*

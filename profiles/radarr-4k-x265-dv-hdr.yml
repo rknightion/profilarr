@@ -1,5 +1,5 @@
-name: 4K x265 DV HDR
-description: "Optimized for 4K x265 releases with Dolby Vision and HDR"
+name: Radarr - 4K x265 DV HDR
+description: "Radarr profile optimized for 4K x265 releases with Dolby Vision and HDR"
 upgrade_allowed: true
 min_format_score: 10
 cutoff_format_score: 500
