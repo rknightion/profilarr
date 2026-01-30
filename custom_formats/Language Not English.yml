@@ -1,12 +1,13 @@
-name: "Language Not English"
-description: "Blocks non-English releases"
+name: Language Not English
+description: Blocks non-English releases
 tags:
-  - Language
-  - Banned
+- Language
+- Banned
 conditions:
-  - name: Not English
-    type: language
-    language: 1
-    negate: true
-    required: true
+- language: english
+  name: Not English
+  negate: true
+  required: true
+  type: language
+  exceptLanguage: false
 tests: []
