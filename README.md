@@ -59,7 +59,7 @@ Compatible with **Profilarr v1**.
 - **Bad Dual Groups** - MULTiPLY, VHSRIP, XEN, etc.
 
 ### Language
-- **Language: Not English** - Blocks non-English releases
+- **Language Not English** - Blocks non-English releases
 - **Dubbed Audio Title** - Matches dubbed/dual/multi audio
 - **Line Mic Dubbed** - Blocks line/mic dubbed releases
 
