@@ -1,0 +1,5 @@
+name: DivX
+pattern: '(?i)\b(divx)\b'
+description: "Matches DivX codec releases"
+tags:
+  - Codec

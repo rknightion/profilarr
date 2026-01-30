@@ -5,7 +5,7 @@ tags:
 conditions:
   - name: DDP Atmos
     type: release_title
-    pattern: "(?i)\b(DDP|DD[.+]?P|EAC-?3|E-?AC-?3|DD\+)[. ]?(5[. ]?1[. ]?)?Atmos\b"
+    pattern: DDP Atmos
     negate: false
     required: true
 tests: []

@@ -1,0 +1,6 @@
+name: Group ION10
+pattern: '^(ION10)$'
+description: "Matches ION10 release group"
+tags:
+  - ReleaseGroup
+  - LQ

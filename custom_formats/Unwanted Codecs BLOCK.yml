@@ -1,42 +1,42 @@
 name: Unwanted Codecs BLOCK
-description: "Blocks unwanted video codecs including x264, AV1, XviD, etc."
+description: "Blocks unwanted codecs - x264, AV1, XviD, DivX, MPEG-2, VC-1, WMV"
 tags:
   - Codec
   - Unwanted
 conditions:
-  - name: x264
+  - name: x264 AVC
     type: release_title
-    pattern: "(?i)\b(x264|h\.?264|avc)\b"
-    negate: false
-    required: false
-  - name: xvid
-    type: release_title
-    pattern: "(?i)\b(xvid)\b"
-    negate: false
-    required: false
-  - name: divx
-    type: release_title
-    pattern: "(?i)\b(divx)\b"
+    pattern: x264 AVC
     negate: false
     required: false
   - name: AV1
     type: release_title
-    pattern: "(?i)\b(AV1)\b"
+    pattern: AV1
     negate: false
     required: false
-  - name: VC-1
+  - name: XviD
     type: release_title
-    pattern: "(?i)\b(VC-?1)\b"
+    pattern: XviD
     negate: false
     required: false
-  - name: WMV
+  - name: DivX
     type: release_title
-    pattern: "(?i)\b(WMV)\b"
+    pattern: DivX
     negate: false
     required: false
   - name: MPEG-2
     type: release_title
-    pattern: "(?i)\b(MPEG-?2)\b"
+    pattern: MPEG-2
+    negate: false
+    required: false
+  - name: VC-1
+    type: release_title
+    pattern: VC-1
+    negate: false
+    required: false
+  - name: WMV
+    type: release_title
+    pattern: WMV
     negate: false
     required: false
 tests: []

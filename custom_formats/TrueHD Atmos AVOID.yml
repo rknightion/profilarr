@@ -1,13 +1,12 @@
 name: TrueHD Atmos AVOID
-description: "Matches TrueHD Atmos releases - large file sizes, avoid for streaming"
+description: "Matches TrueHD Atmos releases - large lossless audio"
 tags:
   - Audio
   - Unwanted
-include_in_rename: true
 conditions:
   - name: TrueHD Atmos
     type: release_title
-    pattern: "(?i)\b(TrueHD[. ]?Atmos|Atmos[. ]?TrueHD)\b"
+    pattern: TrueHD Atmos
     negate: false
     required: true
 tests: []

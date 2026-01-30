@@ -1,27 +1,22 @@
 name: Line Mic Dubbed
-description: "Blocks line/mic dubbed audio releases"
+description: "Blocks line/mic dubbed releases - poor audio quality"
 tags:
   - Language
   - Unwanted
 conditions:
-  - name: Line Dubbed
+  - name: Line Dub
     type: release_title
-    pattern: "\b(LD|LINE[ ._-]?DUB(BED)?)\b"
+    pattern: Line Dub
     negate: false
     required: false
-  - name: Mic Dubbed
+  - name: Mic Dub
     type: release_title
-    pattern: "\b(MD|MIC[ ._-]?DUB(BED)?)\b"
+    pattern: Mic Dub
     negate: false
     required: false
   - name: HQ Line
     type: release_title
-    pattern: "\b(HQ[ ._-]?LINE)\b"
-    negate: false
-    required: false
-  - name: Kino
-    type: release_title
-    pattern: "\b(KINO)\b"
+    pattern: HQ Line
     negate: false
     required: false
 tests: []

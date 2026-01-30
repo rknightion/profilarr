@@ -1,0 +1,6 @@
+name: Group MULTiPLY
+pattern: '^(MULTiPLY)$'
+description: "Matches MULTiPLY release group"
+tags:
+  - ReleaseGroup
+  - BadDual

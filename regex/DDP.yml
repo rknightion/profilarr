@@ -1,0 +1,5 @@
+name: DDP
+pattern: '(?i)(ddp|dd\+|eac3)'
+description: "Matches Dolby Digital Plus releases"
+tags:
+  - Audio

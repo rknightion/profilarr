@@ -1,0 +1,5 @@
+name: x264 AVC
+pattern: '(?i)\b(x264|h\.?264|avc)\b'
+description: "Matches x264/H.264/AVC codec releases"
+tags:
+  - Codec

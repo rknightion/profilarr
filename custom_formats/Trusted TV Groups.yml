@@ -5,87 +5,87 @@ tags:
 conditions:
   - name: PSA
     type: release_group
-    pattern: "^(PSA)$"
+    pattern: Group PSA
     negate: false
     required: false
   - name: MeGusta
     type: release_group
-    pattern: "^(MeGusta)$"
+    pattern: Group MeGusta
     negate: false
     required: false
   - name: ELiTE
     type: release_group
-    pattern: "^(ELiTE)$"
+    pattern: Group ELiTE
     negate: false
     required: false
   - name: d3g
     type: release_group
-    pattern: "^(d3g)$"
+    pattern: Group d3g
     negate: false
     required: false
   - name: iVy
     type: release_group
-    pattern: "^(iVy)$"
+    pattern: Group iVy
     negate: false
     required: false
   - name: RMTeam
     type: release_group
-    pattern: "^(RMTeam)$"
+    pattern: Group RMTeam
     negate: false
     required: false
   - name: JBENT
     type: release_group
-    pattern: "^(JBENT)$"
+    pattern: Group JBENT
     negate: false
     required: false
   - name: MHYSA
     type: release_group
-    pattern: "^(MHYSA)$"
+    pattern: Group MHYSA
     negate: false
     required: false
   - name: NTb
     type: release_group
-    pattern: "^(NTb)$"
+    pattern: Group NTb
     negate: false
     required: false
   - name: FLUX
     type: release_group
-    pattern: "^(FLUX)$"
+    pattern: Group FLUX
     negate: false
     required: false
   - name: BYNDR
     type: release_group
-    pattern: "^(BYNDR)$"
+    pattern: Group BYNDR
     negate: false
     required: false
   - name: HONE
     type: release_group
-    pattern: "^(HONE)$"
+    pattern: Group HONE
     negate: false
     required: false
   - name: NTG
     type: release_group
-    pattern: "^(NTG)$"
+    pattern: Group NTG
     negate: false
     required: false
   - name: TOMMY
     type: release_group
-    pattern: "^(TOMMY)$"
+    pattern: Group TOMMY
     negate: false
     required: false
   - name: EDITH
     type: release_group
-    pattern: "^(EDITH)$"
+    pattern: Group EDITH
     negate: false
     required: false
   - name: PECULATE
     type: release_group
-    pattern: "^(PECULATE)$"
+    pattern: Group PECULATE
     negate: false
     required: false
   - name: SMURF
     type: release_group
-    pattern: "^(SMURF)$"
+    pattern: Group SMURF
     negate: false
     required: false
 tests: []

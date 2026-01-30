@@ -6,7 +6,7 @@ tags:
 conditions:
   - name: Lossless Audio Formats
     type: release_title
-    pattern: "(?i)\b(TrueHD|DTS-?HD[. ]?MA|FLAC|PCM|LPCM)\b"
+    pattern: Lossless Audio
     negate: false
     required: true
 tests: []

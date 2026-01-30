@@ -1,0 +1,5 @@
+name: HDR Any
+pattern: '(?i)\bhdr'
+description: "Matches any HDR release"
+tags:
+  - HDR

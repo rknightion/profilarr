@@ -1,0 +1,5 @@
+name: LQ SAMPA
+pattern: '\b(SAMPA)\b'
+description: "Matches SAMPA releases"
+tags:
+  - LQ

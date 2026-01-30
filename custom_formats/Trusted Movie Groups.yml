@@ -5,72 +5,72 @@ tags:
 conditions:
   - name: LAMA
     type: release_group
-    pattern: "^(LAMA)$"
+    pattern: Group LAMA
     negate: false
     required: false
   - name: PSA
     type: release_group
-    pattern: "^(PSA)$"
+    pattern: Group PSA
     negate: false
     required: false
   - name: NeoNoir
     type: release_group
-    pattern: "^(NeoNoir)$"
+    pattern: Group NeoNoir
     negate: false
     required: false
   - name: FLUX
     type: release_group
-    pattern: "^(FLUX)$"
+    pattern: Group FLUX
     negate: false
     required: false
   - name: BYNDR
     type: release_group
-    pattern: "^(BYNDR)$"
+    pattern: Group BYNDR
     negate: false
     required: false
   - name: HONE
     type: release_group
-    pattern: "^(HONE)$"
+    pattern: Group HONE
     negate: false
     required: false
   - name: AOC
     type: release_group
-    pattern: "^(AOC)$"
+    pattern: Group AOC
     negate: false
     required: false
   - name: hallowed
     type: release_group
-    pattern: "^(hallowed)$"
+    pattern: Group hallowed
     negate: false
     required: false
   - name: iVy
     type: release_group
-    pattern: "^(iVy)$"
+    pattern: Group iVy
     negate: false
     required: false
   - name: FraMeSToR
     type: release_group
-    pattern: "^(FraMeSToR)$"
+    pattern: Group FraMeSToR
     negate: false
     required: false
   - name: BHDStudio
     type: release_group
-    pattern: "^(BHDStudio)$"
+    pattern: Group BHDStudio
     negate: false
     required: false
   - name: DON
     type: release_group
-    pattern: "^(DON)$"
+    pattern: Group DON
     negate: false
     required: false
   - name: CtrlHD
     type: release_group
-    pattern: "^(CtrlHD)$"
+    pattern: Group CtrlHD
     negate: false
     required: false
   - name: SiCFoI
     type: release_group
-    pattern: "^(SiCFoI)$"
+    pattern: Group SiCFoI
     negate: false
     required: false
 tests: []

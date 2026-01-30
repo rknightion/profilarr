@@ -1,0 +1,6 @@
+name: Group CREATiVE24
+pattern: '^(CREATiVE24)$'
+description: "Matches CREATiVE24 release group"
+tags:
+  - ReleaseGroup
+  - BadDual

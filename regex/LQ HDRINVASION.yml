@@ -1,0 +1,5 @@
+name: LQ HDRINVASION
+pattern: '\b(HDRINVASION)\b'
+description: "Matches HDRINVASION releases"
+tags:
+  - LQ

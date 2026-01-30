@@ -1,0 +1,6 @@
+name: Mic Dub
+pattern: '(?i)\b(MD|MIC[ ._-]?DUB(BED)?)\b'
+description: "Matches mic dubbed releases"
+tags:
+  - Language
+  - LQ

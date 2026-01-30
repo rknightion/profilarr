@@ -6,47 +6,47 @@ include_in_rename: true
 conditions:
   - name: 1XBET
     type: release_title
-    pattern: "\b(1XBET)\b"
+    pattern: LQ 1XBET
     negate: false
     required: false
   - name: BEN THE MEN
     type: release_title
-    pattern: "\b(BEN[ ._-]THE[ ._-]MEN)\b"
+    pattern: LQ BEN THE MEN
     negate: false
     required: false
   - name: TeeWee
     type: release_title
-    pattern: "\b(TeeWee)\b"
+    pattern: LQ TeeWee
     negate: false
     required: false
   - name: x0r
     type: release_title
-    pattern: "\b(x0r)\b"
+    pattern: LQ x0r
     negate: false
     required: false
   - name: SAMPA
     type: release_title
-    pattern: "\b(SAMPA)\b"
+    pattern: LQ SAMPA
     negate: false
     required: false
   - name: SUNSCREEN
     type: release_title
-    pattern: "\b(SUNSCREEN)\b"
+    pattern: LQ SUNSCREEN
     negate: false
     required: false
   - name: STARZ
     type: release_title
-    pattern: "(?<!-)\b(STARZ)\b(?![-_. ]?ENCO)"
+    pattern: LQ STARZ
     negate: false
     required: false
   - name: Tigole
     type: release_title
-    pattern: "\b(Tigole)\b"
+    pattern: LQ Tigole
     negate: false
     required: false
   - name: HDRINVASION
     type: release_title
-    pattern: "\b(HDRINVASION)\b"
+    pattern: LQ HDRINVASION
     negate: false
     required: false
 tests: []

@@ -1,21 +1,21 @@
 name: HDR10
-description: "Matches HDR10 releases (excludes HDR10+ and DV)"
+description: "Matches standard HDR10 releases (excludes DV and HDR10+)"
 tags:
   - HDR
 conditions:
-  - name: HDR10
+  - name: Has HDR10
     type: release_title
-    pattern: "(?i)\bhdr10?\b"
+    pattern: HDR10
     negate: false
     required: true
-  - name: Not HDR10Plus
+  - name: No Dolby Vision
     type: release_title
-    pattern: "(?i)(hdr10\+|hdr10plus)"
+    pattern: Dolby Vision
     negate: true
     required: true
-  - name: Not DV
+  - name: No HDR10+
     type: release_title
-    pattern: "(?i)\b(dv|dovi|dolby.?vision)\b"
+    pattern: HDR10+
     negate: true
     required: true
 tests: []

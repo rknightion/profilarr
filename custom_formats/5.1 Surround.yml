@@ -5,17 +5,17 @@ tags:
 conditions:
   - name: 5.1 Audio
     type: release_title
-    pattern: "(?i)(5\.?1|6ch)"
+    pattern: 5.1 Surround
     negate: false
     required: true
   - name: Not DDP
     type: release_title
-    pattern: "(?i)(ddp|dd\+|eac3)"
+    pattern: DDP
     negate: true
     required: true
   - name: Not Atmos
     type: release_title
-    pattern: "(?i)\batmos\b"
+    pattern: Atmos
     negate: true
     required: true
 tests: []

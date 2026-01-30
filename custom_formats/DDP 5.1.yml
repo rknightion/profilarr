@@ -1,16 +1,11 @@
 name: DDP 5.1
-description: "Matches Dolby Digital Plus 5.1 releases (excludes Atmos)"
+description: "Matches Dolby Digital Plus 5.1 releases"
 tags:
   - Audio
 conditions:
   - name: DDP 5.1
     type: release_title
-    pattern: "(?i)(ddp\.?5\.?1|dd\+\.?5\.?1|eac3\.?5\.?1)"
+    pattern: DDP 5.1
     negate: false
-    required: true
-  - name: Not Atmos
-    type: release_title
-    pattern: "(?i)\batmos\b"
-    negate: true
     required: true
 tests: []

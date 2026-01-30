@@ -5,7 +5,7 @@ tags:
 conditions:
   - name: x265 HEVC
     type: release_title
-    pattern: "(?i)(x265|h\\.?265|hevc)"
+    pattern: x265 HEVC
     negate: false
     required: true
 tests: []

@@ -1,0 +1,5 @@
+name: Dolby Vision
+pattern: '(?i)\b(dv|dovi|dolby.?vision)\b'
+description: "Matches Dolby Vision HDR releases"
+tags:
+  - HDR

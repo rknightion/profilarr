@@ -1,0 +1,6 @@
+name: Group FGT
+pattern: '^(FGT)$'
+description: "Matches FGT release group"
+tags:
+  - ReleaseGroup
+  - LQ

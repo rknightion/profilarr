@@ -1,0 +1,6 @@
+name: Group STUTTERSHIT
+pattern: '^(STUTTERSHIT)$'
+description: "Matches STUTTERSHIT release group"
+tags:
+  - ReleaseGroup
+  - LQ

@@ -1,0 +1,5 @@
+name: Proper Repack
+pattern: '(?i)\b(proper|repack|rerip)\b'
+description: "Matches proper/repack releases"
+tags:
+  - Release

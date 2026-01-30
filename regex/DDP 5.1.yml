@@ -1,0 +1,5 @@
+name: DDP 5.1
+pattern: '(?i)(ddp\.?5\.?1|dd\+\.?5\.?1|eac3\.?5\.?1)'
+description: "Matches Dolby Digital Plus 5.1 releases"
+tags:
+  - Audio

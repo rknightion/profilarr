@@ -1,0 +1,5 @@
+name: WMV
+pattern: '(?i)\b(WMV)\b'
+description: "Matches WMV codec releases"
+tags:
+  - Codec

@@ -1,0 +1,6 @@
+name: Group iVy
+pattern: '^(iVy)$'
+description: "Matches iVy release group"
+tags:
+  - ReleaseGroup
+  - Trusted

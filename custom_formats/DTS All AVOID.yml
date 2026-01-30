@@ -4,9 +4,9 @@ tags:
   - Audio
   - Unwanted
 conditions:
-  - name: DTS Any Format
+  - name: DTS All
     type: release_title
-    pattern: "(?i)\b(DTS|DTS-?HD|DTS-?HD[. ]?MA|DTS-?X|DTS-?ES)\b"
+    pattern: DTS All
     negate: false
     required: true
 tests: []

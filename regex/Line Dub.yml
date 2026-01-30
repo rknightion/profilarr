@@ -1,0 +1,6 @@
+name: Line Dub
+pattern: '(?i)\b(LD|LINE[ ._-]?DUB(BED)?)\b'
+description: "Matches line dubbed releases"
+tags:
+  - Language
+  - LQ

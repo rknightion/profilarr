@@ -1,0 +1,5 @@
+name: 10-bit
+pattern: '(?i)(10.?bit|hi10p)'
+description: "Matches 10-bit color depth releases"
+tags:
+  - Codec

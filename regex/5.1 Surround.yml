@@ -1,0 +1,5 @@
+name: 5.1 Surround
+pattern: '(?i)(5\.?1|6ch)'
+description: "Matches 5.1 surround sound releases"
+tags:
+  - Audio

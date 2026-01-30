@@ -6,47 +6,47 @@ tags:
 conditions:
   - name: MULTiPLY
     type: release_group
-    pattern: "^(MULTiPLY)$"
+    pattern: Group MULTiPLY
     negate: false
     required: false
   - name: VHSRIP
     type: release_group
-    pattern: "^(VHSRIP)$"
+    pattern: Group VHSRIP
     negate: false
     required: false
   - name: XEN
     type: release_group
-    pattern: "^(XEN)$"
+    pattern: Group XEN
     negate: false
     required: false
   - name: NAHOM
     type: release_group
-    pattern: "^(NAHOM)$"
+    pattern: Group NAHOM
     negate: false
     required: false
   - name: GALAXY
     type: release_group
-    pattern: "^(GALAXY)$"
+    pattern: Group GALAXY
     negate: false
     required: false
   - name: CREATiVE24
     type: release_group
-    pattern: "^(CREATiVE24)$"
+    pattern: Group CREATiVE24
     negate: false
     required: false
   - name: BONE
     type: release_group
-    pattern: "^(BONE)$"
+    pattern: Group BONE
     negate: false
     required: false
   - name: SiGMA
     type: release_group
-    pattern: "^(SiGMA)$"
+    pattern: Group SiGMA
     negate: false
     required: false
   - name: CODEFLiX
     type: release_group
-    pattern: "^(CODEFLiX)$"
+    pattern: Group CODEFLiX
     negate: false
     required: false
 tests: []

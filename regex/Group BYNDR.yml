@@ -1,0 +1,6 @@
+name: Group BYNDR
+pattern: '^(BYNDR)$'
+description: "Matches BYNDR release group"
+tags:
+  - ReleaseGroup
+  - Trusted

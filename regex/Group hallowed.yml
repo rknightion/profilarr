@@ -1,0 +1,6 @@
+name: Group hallowed
+pattern: '^(hallowed)$'
+description: "Matches hallowed release group"
+tags:
+  - ReleaseGroup
+  - Trusted

@@ -1,0 +1,6 @@
+name: Group BHDStudio
+pattern: '^(BHDStudio)$'
+description: "Matches BHDStudio release group"
+tags:
+  - ReleaseGroup
+  - Trusted

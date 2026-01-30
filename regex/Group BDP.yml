@@ -1,0 +1,6 @@
+name: Group BDP
+pattern: '^(BDP)$'
+description: "Matches BDP release group"
+tags:
+  - ReleaseGroup
+  - LQ

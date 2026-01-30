@@ -1,0 +1,6 @@
+name: Group NTb
+pattern: '^(NTb)$'
+description: "Matches NTb release group"
+tags:
+  - ReleaseGroup
+  - Trusted

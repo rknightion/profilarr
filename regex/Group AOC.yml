@@ -1,0 +1,6 @@
+name: Group AOC
+pattern: '^(AOC)$'
+description: "Matches AOC release group"
+tags:
+  - ReleaseGroup
+  - Trusted

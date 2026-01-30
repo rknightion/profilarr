@@ -1,0 +1,6 @@
+name: Group GETIT
+pattern: '^(GETIT)$'
+description: "Matches GETIT release group"
+tags:
+  - ReleaseGroup
+  - LQ

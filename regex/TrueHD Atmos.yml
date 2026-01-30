@@ -1,0 +1,5 @@
+name: TrueHD Atmos
+pattern: '(?i)\b(TrueHD[. ]?Atmos|Atmos[. ]?TrueHD)\b'
+description: "Matches TrueHD Atmos lossless releases"
+tags:
+  - Audio

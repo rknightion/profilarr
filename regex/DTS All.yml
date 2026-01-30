@@ -1,0 +1,5 @@
+name: DTS All
+pattern: '(?i)\b(DTS|DTS-?HD|DTS-?HD[. ]?MA|DTS-?X|DTS-?ES)\b'
+description: "Matches any DTS audio format"
+tags:
+  - Audio

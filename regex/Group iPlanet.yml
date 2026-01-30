@@ -1,0 +1,6 @@
+name: Group iPlanet
+pattern: '^(iPlanet)$'
+description: "Matches iPlanet release group"
+tags:
+  - ReleaseGroup
+  - LQ

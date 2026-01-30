@@ -1,16 +1,16 @@
 name: DV HDR10 Compatible
-description: "Matches Dolby Vision releases with HDR10 fallback layer for maximum compatibility"
+description: "Matches Dolby Vision releases with HDR10 fallback"
 tags:
   - HDR
 conditions:
   - name: Dolby Vision
     type: release_title
-    pattern: "(?i)\\b(dv|dovi|dolby.?vision)\\b"
+    pattern: Dolby Vision
     negate: false
     required: true
   - name: HDR10 Fallback
     type: release_title
-    pattern: "(?i)\\bhdr(10)?\\b"
+    pattern: HDR10
     negate: false
     required: true
 tests: []

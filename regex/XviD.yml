@@ -1,0 +1,5 @@
+name: XviD
+pattern: '(?i)\b(xvid)\b'
+description: "Matches XviD codec releases"
+tags:
+  - Codec

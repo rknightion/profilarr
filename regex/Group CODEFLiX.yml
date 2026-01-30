@@ -1,0 +1,6 @@
+name: Group CODEFLiX
+pattern: '^(CODEFLiX)$'
+description: "Matches CODEFLiX release group"
+tags:
+  - ReleaseGroup
+  - BadDual

@@ -1,0 +1,6 @@
+name: Group CADAVER
+pattern: '^(CADAVER)$'
+description: "Matches CADAVER release group"
+tags:
+  - ReleaseGroup
+  - LQ

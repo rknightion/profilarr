@@ -1,0 +1,6 @@
+name: Group NAHOM
+pattern: '^(NAHOM)$'
+description: "Matches NAHOM release group"
+tags:
+  - ReleaseGroup
+  - BadDual

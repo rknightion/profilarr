@@ -7,67 +7,67 @@ include_in_rename: true
 conditions:
   - name: FGT
     type: release_group
-    pattern: "^(FGT)$"
+    pattern: Group FGT
     negate: false
     required: false
   - name: STUTTERSHIT
     type: release_group
-    pattern: "^(STUTTERSHIT)$"
+    pattern: Group STUTTERSHIT
     negate: false
     required: false
   - name: SPARKS
     type: release_group
-    pattern: "^(SPARKS)$"
+    pattern: Group SPARKS
     negate: false
     required: false
   - name: AMIABLE
     type: release_group
-    pattern: "^(AMIABLE)$"
+    pattern: Group AMIABLE
     negate: false
     required: false
   - name: TERMiNAL
     type: release_group
-    pattern: "^(TERMiNAL)$"
+    pattern: Group TERMiNAL
     negate: false
     required: false
   - name: ION10
     type: release_group
-    pattern: "^(ION10)$"
+    pattern: Group ION10
     negate: false
     required: false
   - name: CADAVER
     type: release_group
-    pattern: "^(CADAVER)$"
+    pattern: Group CADAVER
     negate: false
     required: false
   - name: nhanc3
     type: release_group
-    pattern: "^(nhanc3)$"
+    pattern: Group nhanc3
     negate: false
     required: false
   - name: DEMAND
     type: release_group
-    pattern: "^(DEMAND)$"
+    pattern: Group DEMAND
     negate: false
     required: false
   - name: iPlanet
     type: release_group
-    pattern: "^(iPlanet)$"
+    pattern: Group iPlanet
     negate: false
     required: false
   - name: TRUMP
     type: release_group
-    pattern: "^(TRUMP)$"
+    pattern: Group TRUMP
     negate: false
     required: false
   - name: BDP
     type: release_group
-    pattern: "^(BDP)$"
+    pattern: Group BDP
     negate: false
     required: false
   - name: GETIT
     type: release_group
-    pattern: "^(GETIT)$"
+    pattern: Group GETIT
     negate: false
     required: false
 tests: []
