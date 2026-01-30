@@ -44,7 +44,7 @@ custom_formats:
   score: -200
 - name: Bad Dual Groups
   score: -10000
-- name: 'Language Not English'
+- name: Language Not English
   score: -10000
 - name: Line Mic Dubbed
   score: -10000
