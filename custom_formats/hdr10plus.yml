@@ -1,10 +1,11 @@
 name: HDR10Plus
-description: "HDR10Plus - Matches: (hdr10\+|hdr10plus)"
+description: "Matches HDR10+ releases for dynamic HDR metadata"
 tags:
   - HDR
 conditions:
   - name: HDR10Plus
     type: release_title
     pattern: "(?i)(hdr10\+|hdr10plus)"
+    negate: false
     required: true
 tests: []

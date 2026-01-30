@@ -1,0 +1,11 @@
+name: x265 HEVC
+description: "Matches x265/H.265/HEVC codec releases for efficient compression"
+tags:
+  - Codec
+conditions:
+  - name: x265 HEVC
+    type: release_title
+    pattern: "(?i)(x265|h\\.?265|hevc)"
+    negate: false
+    required: true
+tests: []

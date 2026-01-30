@@ -1,0 +1,21 @@
+name: Dubbed Audio Title
+description: "Matches releases with dubbed/dual/multi audio indicators"
+tags:
+  - Language
+conditions:
+  - name: Dubbed
+    type: release_title
+    pattern: "(?i)\b(dubbed)\b"
+    negate: false
+    required: false
+  - name: DUAL Audio
+    type: release_title
+    pattern: "(?i)\b(DUAL[._-]?AUDIO)\b"
+    negate: false
+    required: false
+  - name: MULTi
+    type: release_title
+    pattern: "(?i)\b(MULTi)\b"
+    negate: false
+    required: false
+tests: []

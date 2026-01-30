@@ -1,0 +1,12 @@
+name: PROPER REPACK
+description: "Matches PROPER, REPACK, and RERIP releases"
+tags:
+  - Versions
+include_in_rename: true
+conditions:
+  - name: Proper Repack
+    type: release_title
+    pattern: "(?i)\b(proper|repack|rerip)\b"
+    negate: false
+    required: true
+tests: []

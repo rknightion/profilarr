@@ -1,0 +1,7 @@
+naming:
+  radarr:
+    rename_movies: true
+    replace_illegal_characters: true
+    colon_replacement_format: smart
+    standard_movie_format: "{Movie CleanTitle} {(Release Year)} {tmdb-{TmdbId}} - {Edition Tags} {[MediaInfo 3D]}{[Custom Formats]}{[Quality Full]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo VideoCodec]}{-Release Group}"
+    movie_folder_format: "{Movie CleanTitle} ({Release Year}) {tmdb-{TmdbId}}"

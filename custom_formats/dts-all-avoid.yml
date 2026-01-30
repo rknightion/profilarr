@@ -1,5 +1,5 @@
 name: DTS All AVOID
-description: "DTS All AVOID - Matches: (DTS|DTS-?HD|DTS-?HD[. ]?MA|DTS-?X|DTS-?ES)"
+description: "Matches all DTS audio formats - avoid for streaming compatibility"
 tags:
   - Audio
   - Unwanted
@@ -7,5 +7,6 @@ conditions:
   - name: DTS Any Format
     type: release_title
     pattern: "(?i)\b(DTS|DTS-?HD|DTS-?HD[. ]?MA|DTS-?X|DTS-?ES)\b"
+    negate: false
     required: true
 tests: []

@@ -1,11 +1,12 @@
 name: 5.1 Surround
-description: "5.1 Surround custom format with 3 conditions"
+description: "Matches 5.1 surround sound releases (excludes DDP and Atmos)"
 tags:
   - Audio
 conditions:
   - name: 5.1 Audio
     type: release_title
     pattern: "(?i)(5\.?1|6ch)"
+    negate: false
     required: true
   - name: Not DDP
     type: release_title

@@ -1,0 +1,91 @@
+name: Trusted TV Groups
+description: "Preferred release groups for TV content"
+tags:
+  - Release Group
+conditions:
+  - name: PSA
+    type: release_group
+    pattern: "^(PSA)$"
+    negate: false
+    required: false
+  - name: MeGusta
+    type: release_group
+    pattern: "^(MeGusta)$"
+    negate: false
+    required: false
+  - name: ELiTE
+    type: release_group
+    pattern: "^(ELiTE)$"
+    negate: false
+    required: false
+  - name: d3g
+    type: release_group
+    pattern: "^(d3g)$"
+    negate: false
+    required: false
+  - name: iVy
+    type: release_group
+    pattern: "^(iVy)$"
+    negate: false
+    required: false
+  - name: RMTeam
+    type: release_group
+    pattern: "^(RMTeam)$"
+    negate: false
+    required: false
+  - name: JBENT
+    type: release_group
+    pattern: "^(JBENT)$"
+    negate: false
+    required: false
+  - name: MHYSA
+    type: release_group
+    pattern: "^(MHYSA)$"
+    negate: false
+    required: false
+  - name: NTb
+    type: release_group
+    pattern: "^(NTb)$"
+    negate: false
+    required: false
+  - name: FLUX
+    type: release_group
+    pattern: "^(FLUX)$"
+    negate: false
+    required: false
+  - name: BYNDR
+    type: release_group
+    pattern: "^(BYNDR)$"
+    negate: false
+    required: false
+  - name: HONE
+    type: release_group
+    pattern: "^(HONE)$"
+    negate: false
+    required: false
+  - name: NTG
+    type: release_group
+    pattern: "^(NTG)$"
+    negate: false
+    required: false
+  - name: TOMMY
+    type: release_group
+    pattern: "^(TOMMY)$"
+    negate: false
+    required: false
+  - name: EDITH
+    type: release_group
+    pattern: "^(EDITH)$"
+    negate: false
+    required: false
+  - name: PECULATE
+    type: release_group
+    pattern: "^(PECULATE)$"
+    negate: false
+    required: false
+  - name: SMURF
+    type: release_group
+    pattern: "^(SMURF)$"
+    negate: false
+    required: false
+tests: []

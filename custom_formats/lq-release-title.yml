@@ -1,0 +1,52 @@
+name: LQ Release Title
+description: "Blocks low quality releases by title patterns"
+tags:
+  - Unwanted
+include_in_rename: true
+conditions:
+  - name: 1XBET
+    type: release_title
+    pattern: "\b(1XBET)\b"
+    negate: false
+    required: false
+  - name: BEN THE MEN
+    type: release_title
+    pattern: "\b(BEN[ ._-]THE[ ._-]MEN)\b"
+    negate: false
+    required: false
+  - name: TeeWee
+    type: release_title
+    pattern: "\b(TeeWee)\b"
+    negate: false
+    required: false
+  - name: x0r
+    type: release_title
+    pattern: "\b(x0r)\b"
+    negate: false
+    required: false
+  - name: SAMPA
+    type: release_title
+    pattern: "\b(SAMPA)\b"
+    negate: false
+    required: false
+  - name: SUNSCREEN
+    type: release_title
+    pattern: "\b(SUNSCREEN)\b"
+    negate: false
+    required: false
+  - name: STARZ
+    type: release_title
+    pattern: "(?<!-)\b(STARZ)\b(?![-_. ]?ENCO)"
+    negate: false
+    required: false
+  - name: Tigole
+    type: release_title
+    pattern: "\b(Tigole)\b"
+    negate: false
+    required: false
+  - name: HDRINVASION
+    type: release_title
+    pattern: "\b(HDRINVASION)\b"
+    negate: false
+    required: false
+tests: []

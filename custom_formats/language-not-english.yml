@@ -1,0 +1,12 @@
+name: "Language: Not English"
+description: "Blocks releases that are not in English"
+tags:
+  - Language
+  - Unwanted
+conditions:
+  - name: Not English Language
+    type: language
+    language: 1
+    negate: true
+    required: true
+tests: []

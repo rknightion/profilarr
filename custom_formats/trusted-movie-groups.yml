@@ -1,0 +1,76 @@
+name: Trusted Movie Groups
+description: "Preferred release groups for movie content"
+tags:
+  - Release Group
+conditions:
+  - name: LAMA
+    type: release_group
+    pattern: "^(LAMA)$"
+    negate: false
+    required: false
+  - name: PSA
+    type: release_group
+    pattern: "^(PSA)$"
+    negate: false
+    required: false
+  - name: NeoNoir
+    type: release_group
+    pattern: "^(NeoNoir)$"
+    negate: false
+    required: false
+  - name: FLUX
+    type: release_group
+    pattern: "^(FLUX)$"
+    negate: false
+    required: false
+  - name: BYNDR
+    type: release_group
+    pattern: "^(BYNDR)$"
+    negate: false
+    required: false
+  - name: HONE
+    type: release_group
+    pattern: "^(HONE)$"
+    negate: false
+    required: false
+  - name: AOC
+    type: release_group
+    pattern: "^(AOC)$"
+    negate: false
+    required: false
+  - name: hallowed
+    type: release_group
+    pattern: "^(hallowed)$"
+    negate: false
+    required: false
+  - name: iVy
+    type: release_group
+    pattern: "^(iVy)$"
+    negate: false
+    required: false
+  - name: FraMeSToR
+    type: release_group
+    pattern: "^(FraMeSToR)$"
+    negate: false
+    required: false
+  - name: BHDStudio
+    type: release_group
+    pattern: "^(BHDStudio)$"
+    negate: false
+    required: false
+  - name: DON
+    type: release_group
+    pattern: "^(DON)$"
+    negate: false
+    required: false
+  - name: CtrlHD
+    type: release_group
+    pattern: "^(CtrlHD)$"
+    negate: false
+    required: false
+  - name: SiCFoI
+    type: release_group
+    pattern: "^(SiCFoI)$"
+    negate: false
+    required: false
+tests: []

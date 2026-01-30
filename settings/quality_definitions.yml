@@ -1,0 +1,133 @@
+quality_definitions:
+  radarr:
+    # SD Qualities (mostly default)
+    Unknown:
+      min: 0
+      max: 100
+      preferred: 95
+    WORKPRINT:
+      min: 0
+      max: 100
+      preferred: 95
+    CAM:
+      min: 0
+      max: 100
+      preferred: 95
+    TELESYNC:
+      min: 0
+      max: 100
+      preferred: 95
+    TELECINE:
+      min: 0
+      max: 100
+      preferred: 95
+    REGIONAL:
+      min: 0
+      max: 100
+      preferred: 95
+    DVDSCR:
+      min: 0
+      max: 100
+      preferred: 95
+    SDTV:
+      min: 0
+      max: 100
+      preferred: 95
+    DVD:
+      min: 0
+      max: 100
+      preferred: 95
+    DVD-R:
+      min: 0
+      max: 100
+      preferred: 95
+    
+    # 480p Web
+    WEBDL-480p:
+      min: 0
+      max: 100
+      preferred: 95
+    WEBRip-480p:
+      min: 0
+      max: 100
+      preferred: 95
+    Bluray-480p:
+      min: 0
+      max: 100
+      preferred: 95
+    Bluray-576p:
+      min: 0
+      max: 100
+      preferred: 95
+    
+    # 720p
+    HDTV-720p:
+      min: 0
+      max: 100
+      preferred: 95
+    WEBDL-720p:
+      min: 0
+      max: 100
+      preferred: 95
+    WEBRip-720p:
+      min: 0
+      max: 100
+      preferred: 95
+    Bluray-720p:
+      min: 0
+      max: 100
+      preferred: 95
+    
+    # 1080p - Custom sizes for compact x265
+    HDTV-1080p:
+      min: 5
+      max: 60
+      preferred: 17
+    WEBDL-1080p:
+      min: 5
+      max: 60
+      preferred: 17
+    WEBRip-1080p:
+      min: 5
+      max: 60
+      preferred: 17
+    Bluray-1080p:
+      min: 5
+      max: 60
+      preferred: 20
+    Remux-1080p:
+      min: 0
+      max: 60
+      preferred: 20
+    
+    # 2160p/4K - Custom sizes
+    HDTV-2160p:
+      min: 20
+      max: 250
+      preferred: 80
+    WEBDL-2160p:
+      min: 20
+      max: 250
+      preferred: 80
+    WEBRip-2160p:
+      min: 20
+      max: 250
+      preferred: 90
+    Bluray-2160p:
+      min: 20
+      max: 250
+      preferred: 120
+    Remux-2160p:
+      min: 20
+      max: 250
+      preferred: 150
+    
+    # BR-DISK and Raw-HD
+    BR-DISK:
+      min: 20
+      max: 250
+      preferred: 150
+    Raw-HD:
+      min: 20
+      max: 250
+      preferred: 150

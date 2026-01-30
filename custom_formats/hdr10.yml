@@ -1,11 +1,12 @@
 name: HDR10
-description: "HDR10 custom format with 3 conditions"
+description: "Matches HDR10 releases (excludes HDR10+ and DV)"
 tags:
   - HDR
 conditions:
   - name: HDR10
     type: release_title
     pattern: "(?i)\bhdr10?\b"
+    negate: false
     required: true
   - name: Not HDR10Plus
     type: release_title

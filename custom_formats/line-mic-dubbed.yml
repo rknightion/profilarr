@@ -1,0 +1,27 @@
+name: Line Mic Dubbed
+description: "Blocks line/mic dubbed audio releases"
+tags:
+  - Language
+  - Unwanted
+conditions:
+  - name: Line Dubbed
+    type: release_title
+    pattern: "\b(LD|LINE[ ._-]?DUB(BED)?)\b"
+    negate: false
+    required: false
+  - name: Mic Dubbed
+    type: release_title
+    pattern: "\b(MD|MIC[ ._-]?DUB(BED)?)\b"
+    negate: false
+    required: false
+  - name: HQ Line
+    type: release_title
+    pattern: "\b(HQ[ ._-]?LINE)\b"
+    negate: false
+    required: false
+  - name: Kino
+    type: release_title
+    pattern: "\b(KINO)\b"
+    negate: false
+    required: false
+tests: []

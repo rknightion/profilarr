@@ -1,0 +1,52 @@
+name: Bad Dual Groups
+description: "Blocks release groups known for bad dual audio releases"
+tags:
+  - Release Group
+  - Unwanted
+conditions:
+  - name: MULTiPLY
+    type: release_group
+    pattern: "^(MULTiPLY)$"
+    negate: false
+    required: false
+  - name: VHSRIP
+    type: release_group
+    pattern: "^(VHSRIP)$"
+    negate: false
+    required: false
+  - name: XEN
+    type: release_group
+    pattern: "^(XEN)$"
+    negate: false
+    required: false
+  - name: NAHOM
+    type: release_group
+    pattern: "^(NAHOM)$"
+    negate: false
+    required: false
+  - name: GALAXY
+    type: release_group
+    pattern: "^(GALAXY)$"
+    negate: false
+    required: false
+  - name: CREATiVE24
+    type: release_group
+    pattern: "^(CREATiVE24)$"
+    negate: false
+    required: false
+  - name: BONE
+    type: release_group
+    pattern: "^(BONE)$"
+    negate: false
+    required: false
+  - name: SiGMA
+    type: release_group
+    pattern: "^(SiGMA)$"
+    negate: false
+    required: false
+  - name: CODEFLiX
+    type: release_group
+    pattern: "^(CODEFLiX)$"
+    negate: false
+    required: false
+tests: []
