@@ -1,6 +1,8 @@
 # Profilarr Database
 
-Configuration database for **Radarr** and **Sonarr** - exported and customized for x265 compact releases.
+Configuration database for **Radarr** and **Sonarr** - optimized for x265 compact releases.
+
+Compatible with **Profilarr v1**.
 
 ## Structure
 
@@ -8,37 +10,39 @@ Configuration database for **Radarr** and **Sonarr** - exported and customized f
 .
 ├── custom_formats/          # 22 custom format definitions (shared)
 │   ├── 10-bit.yml
-│   ├── 5-1-surround.yml
-│   ├── bad-dual-groups.yml
-│   ├── dd-atmos.yml
-│   ├── ddp-5-1.yml
-│   ├── dts-all-avoid.yml
-│   ├── dubbed-audio-title.yml
-│   ├── dv-hdr10-compatible.yml
-│   ├── dv-no-fallback-p5-avoid.yml
-│   ├── hdr10.yml
-│   ├── hdr10plus.yml
-│   ├── language-not-english.yml
-│   ├── line-mic-dubbed.yml
-│   ├── lossless-audio-avoid.yml
-│   ├── lq-groups.yml
-│   ├── lq-release-title.yml
-│   ├── proper-repack.yml
-│   ├── truehd-atmos-avoid.yml
-│   ├── trusted-movie-groups.yml
-│   ├── trusted-tv-groups.yml
-│   ├── unwanted-codecs-block.yml
-│   └── x265-hevc.yml
+│   ├── 5.1 Surround.yml
+│   ├── Bad Dual Groups.yml
+│   ├── DD+ Atmos.yml
+│   ├── DDP 5.1.yml
+│   ├── DTS All AVOID.yml
+│   ├── DV HDR10 Compatible.yml
+│   ├── DV No Fallback P5 AVOID.yml
+│   ├── Dubbed Audio Title.yml
+│   ├── HDR10.yml
+│   ├── HDR10Plus.yml
+│   ├── Language: Not English.yml
+│   ├── Line Mic Dubbed.yml
+│   ├── Lossless Audio AVOID.yml
+│   ├── LQ Groups.yml
+│   ├── LQ Release Title.yml
+│   ├── PROPER REPACK.yml
+│   ├── TrueHD Atmos AVOID.yml
+│   ├── Trusted Movie Groups.yml
+│   ├── Trusted TV Groups.yml
+│   ├── Unwanted Codecs BLOCK.yml
+│   └── x265 HEVC.yml
 ├── profiles/                # Quality profiles
-│   ├── radarr-1080p-x265-compact.yml
-│   ├── radarr-4k-x265-dv-hdr.yml
-│   ├── sonarr-1080p-x265-compact.yml
-│   └── sonarr-4k-x265-dv-hdr.yml
-├── settings/                # Configuration settings
+│   ├── Radarr - 1080p x265 Compact.yml
+│   ├── Radarr - 4K x265 DV HDR.yml
+│   ├── Sonarr - 1080p x265 Compact.yml
+│   └── Sonarr - 4K x265 DV HDR.yml
+├── media_management/        # Media management settings
 │   ├── naming.yml
-│   └── quality_definitions.yml  # Contains both radarr and sonarr sections
+│   └── quality_definitions.yml
 └── README.md
 ```
+
+**Note:** File names must match the `name` field inside each YAML file for Profilarr v1 compatibility.
 
 ## Custom Formats by Category
 
@@ -124,11 +128,11 @@ Configuration database for **Radarr** and **Sonarr** - exported and customized f
 
 ## Quality Definitions
 
-Quality size limits (MB/minute) are configured separately for Radarr and Sonarr in `settings/quality_definitions.yml`. Sonarr uses slightly lower bitrates suitable for TV content.
+Quality size limits (MB/minute) are configured separately for Radarr and Sonarr in `media_management/quality_definitions.yml`. Sonarr uses slightly lower bitrates suitable for TV content.
 
 ## Usage
 
-### With Profilarr
+### With Profilarr v1
 
 1. Push this directory to a private GitHub repository
 2. In Profilarr, add your repository URL
@@ -195,4 +199,4 @@ quality_definitions:
 ```
 
 ---
-*Configuration database for Radarr and Sonarr*
+*Configuration database for Radarr and Sonarr - Profilarr v1 compatible*
