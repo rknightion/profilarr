@@ -1,4 +1,4 @@
-quality_definitions:
+qualityDefinitions:
   radarr:
     # SD Qualities (mostly default)
     Unknown:
