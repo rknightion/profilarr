@@ -57,10 +57,6 @@ custom_formats:
 custom_formats_radarr: []
 custom_formats_sonarr: []
 qualities:
-- id: 1
-  name: Raw-HD
-- id: 2
-  name: BR-Disk
 - id: 3
   name: Remux-2160p
 - id: 4
