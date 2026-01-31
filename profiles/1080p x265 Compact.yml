@@ -44,6 +44,8 @@ custom_formats:
   score: -75
 - name: DV No Fallback P5 AVOID
   score: -200
+- name: No x265 Detected
+  score: -200
 - name: 4k
   score: -10000
 - name: Bad Dual Groups
