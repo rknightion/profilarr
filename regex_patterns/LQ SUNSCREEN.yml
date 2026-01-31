@@ -1,5 +1,5 @@
 name: LQ SUNSCREEN
-pattern: '\b(SUNSCREEN)\b'
+pattern: '(?i)\b(SUNSCREEN)\b'
 description: "Matches SUNSCREEN releases"
 tags:
   - Banned

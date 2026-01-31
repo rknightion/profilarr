@@ -8,3 +8,27 @@ tests:
 - id: 1
   input: Peter.Pan.and.Wendy.2023.1080p.DSNP.WEB-DL.DDP5.1.Atmos.H.264-CMRG.mkv
   expected: true
+- id: 2
+  input: Futurama Benders Big Score 2007 1080p WEB-DL DD5 1 H 264-DON
+  expected: true
+- id: 3
+  input: Movie.2024.1080p.WEB-DL.x264-GROUP
+  expected: true
+- id: 4
+  input: Movie.2024.1080p.WEB-DL.AVC-GROUP
+  expected: true
+- id: 5
+  input: Movie.2024.1080p.WEB-DL.H264-GROUP
+  expected: true
+- id: 6
+  input: Movie.2024.1080p.WEB.x265-GROUP
+  expected: false
+- id: 7
+  input: Movie.2024.1080p.WEB.HEVC-GROUP
+  expected: false
+- id: 8
+  input: Movie.2024.1080p.WEB.x.264-GROUP
+  expected: true
+- id: 9
+  input: Movie.2024.1080p.WEB.H.264-GROUP
+  expected: true

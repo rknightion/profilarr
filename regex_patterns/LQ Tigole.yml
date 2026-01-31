@@ -1,5 +1,5 @@
 name: LQ Tigole
-pattern: '\b(Tigole)\b'
+pattern: '(?i)\b(Tigole)\b'
 description: "Matches Tigole releases"
 tags:
   - Banned

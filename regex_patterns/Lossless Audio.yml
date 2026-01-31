@@ -4,3 +4,28 @@ description: "Matches lossless audio formats"
 tags:
   - Audio
   - Lossless
+tests:
+- id: 1
+  input: Movie.2024.2160p.UHD.BluRay.TrueHD.7.1.x265-GROUP
+  expected: true
+- id: 2
+  input: Movie.2024.2160p.UHD.BluRay.DTS-HD.MA.5.1.x265-GROUP
+  expected: true
+- id: 3
+  input: Movie.2024.2160p.UHD.BluRay.DTSHD.MA.5.1.x265-GROUP
+  expected: true
+- id: 4
+  input: Movie.2024.1080p.BluRay.FLAC.x265-GROUP
+  expected: true
+- id: 5
+  input: Movie.2024.1080p.BluRay.PCM.x265-GROUP
+  expected: true
+- id: 6
+  input: Movie.2024.1080p.BluRay.LPCM.x265-GROUP
+  expected: true
+- id: 7
+  input: Movie.2024.1080p.WEB-DL.DDP5.1.x265-GROUP
+  expected: false
+- id: 8
+  input: Movie.2024.1080p.WEB-DL.AC3.x265-GROUP
+  expected: false

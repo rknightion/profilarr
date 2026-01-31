@@ -8,3 +8,30 @@ tests:
 - id: 1
   input: Peter.Pan.and.Wendy.2023.1080p.DSNP.WEB-DL.DDP5.1.Atmos.H.264-CMRG.mkv
   expected: false
+- id: 2
+  input: The.Mother.2023.2160p.WEB.h265-BETTY
+  expected: true
+- id: 3
+  input: Ice.Road.Vengeance.2025.2160p.UHD.BluRay.H265-GAZPROM
+  expected: true
+- id: 4
+  input: Movie.2024.1080p.WEBRip.x265-GROUP
+  expected: true
+- id: 5
+  input: Title.2024.1080p.WEB.HEVC-GROUP
+  expected: true
+- id: 6
+  input: Futurama.-.Benders.Big.Score.2007.1080p.Webrip.x265.10bit.AC3.5.1-Goki
+  expected: true
+- id: 7
+  input: Movie.2024.1080p.WEB-DL.x264-GROUP
+  expected: false
+- id: 8
+  input: Movie.2024.1080p.WEB.H.265-GROUP
+  expected: true
+- id: 9
+  input: Movie.2024.1080p.WEB.H 265-GROUP
+  expected: true
+- id: 10
+  input: Movie.2024.1080p.WEB.x.265-GROUP
+  expected: true

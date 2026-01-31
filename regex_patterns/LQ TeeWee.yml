@@ -1,5 +1,5 @@
 name: LQ TeeWee
-pattern: '\b(TeeWee)\b'
+pattern: '(?i)\b(TeeWee)\b'
 description: "Matches TeeWee releases"
 tags:
   - Banned

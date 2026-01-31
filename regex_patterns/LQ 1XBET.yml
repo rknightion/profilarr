@@ -1,5 +1,5 @@
 name: LQ 1XBET
-pattern: '\b(1XBET)\b'
+pattern: '(?i)\b(1XBET)\b'
 description: "Matches 1XBET watermark releases"
 tags:
   - Banned

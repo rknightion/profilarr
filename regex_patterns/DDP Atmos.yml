@@ -4,3 +4,25 @@ description: "Matches Dolby Digital Plus Atmos releases"
 tags:
   - Audio
   - Enhancement
+tests:
+- id: 1
+  input: Movie.2024.1080p.WEB-DL.DDP5.1.Atmos.x265-GROUP
+  expected: true
+- id: 2
+  input: Movie.2024.1080p.WEB-DL.DDP.Atmos.x265-GROUP
+  expected: true
+- id: 3
+  input: Movie.2024.1080p.WEB-DL.DD+.Atmos.x265-GROUP
+  expected: true
+- id: 4
+  input: Movie.2024.1080p.WEB-DL.EAC3.Atmos.x265-GROUP
+  expected: true
+- id: 5
+  input: Movie.2024.1080p.WEB-DL.E-AC-3.5.1.Atmos.x265-GROUP
+  expected: true
+- id: 6
+  input: Movie.2024.1080p.WEB-DL.TrueHD.Atmos.x265-GROUP
+  expected: false
+- id: 7
+  input: Movie.2024.1080p.WEB-DL.DDP5.1.x265-GROUP
+  expected: false

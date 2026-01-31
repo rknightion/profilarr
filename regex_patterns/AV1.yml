@@ -4,3 +4,16 @@ description: "Matches AV1 codec releases"
 tags:
   - Codec
   - Encoder
+tests:
+- id: 1
+  input: Movie.2024.2160p.WEB.AV1-GROUP
+  expected: true
+- id: 2
+  input: Movie.2024.2160p.WEB.av1-GROUP
+  expected: true
+- id: 3
+  input: Movie.2024.2160p.WEB.x265-GROUP
+  expected: false
+- id: 4
+  input: Movie.2024.2160p.WEB.HEVC-GROUP
+  expected: false

@@ -1,5 +1,5 @@
 name: LQ x0r
-pattern: '\b(x0r)\b'
+pattern: '(?i)\b(x0r)\b'
 description: "Matches x0r releases"
 tags:
   - Banned

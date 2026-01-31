@@ -3,3 +3,28 @@ pattern: '(?i)\b(DTS|DTS-?HD|DTS-?HD[. ]?MA|DTS-?X|DTS-?ES)\b'
 description: "Matches any DTS audio format"
 tags:
   - Audio
+tests:
+- id: 1
+  input: Movie.2024.1080p.BluRay.DTS.x265-GROUP
+  expected: true
+- id: 2
+  input: Movie.2024.1080p.BluRay.DTS-HD.x265-GROUP
+  expected: true
+- id: 3
+  input: Movie.2024.1080p.BluRay.DTS-HD.MA.5.1.x265-GROUP
+  expected: true
+- id: 4
+  input: Movie.2024.1080p.BluRay.DTSHD.MA.x265-GROUP
+  expected: true
+- id: 5
+  input: Movie.2024.1080p.BluRay.DTS-X.x265-GROUP
+  expected: true
+- id: 6
+  input: Movie.2024.1080p.BluRay.DTS-ES.x265-GROUP
+  expected: true
+- id: 7
+  input: Movie.2024.1080p.WEB-DL.DDP5.1.x265-GROUP
+  expected: false
+- id: 8
+  input: Movie.2024.1080p.WEB-DL.AC3.x265-GROUP
+  expected: false

@@ -1,5 +1,5 @@
 name: LQ HDRINVASION
-pattern: '\b(HDRINVASION)\b'
+pattern: '(?i)\b(HDRINVASION)\b'
 description: "Matches HDRINVASION releases"
 tags:
   - Banned

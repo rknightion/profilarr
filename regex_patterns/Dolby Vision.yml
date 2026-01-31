@@ -5,3 +5,28 @@ tags:
   - HDR
   - Colour Grade
   - Enhancement
+tests:
+- id: 1
+  input: Reptile.2023.DV.2160p.WEB.h265-BETTY
+  expected: true
+- id: 2
+  input: Movie.2024.2160p.WEB.DoVi.x265-GROUP
+  expected: true
+- id: 3
+  input: The.Bad.Boy.and.Me.2.2025.GERMAN.DL.2160p.HDR.DV.WEB.H265-MGE
+  expected: true
+- id: 4
+  input: Movie.2024.2160p.WEB.Dolby.Vision.x265-GROUP
+  expected: true
+- id: 5
+  input: Movie.2024.2160p.WEB.DolbyVision.x265-GROUP
+  expected: true
+- id: 6
+  input: Movie.2024.2160p.WEB.dv.x265-GROUP
+  expected: true
+- id: 7
+  input: Movie.2024.2160p.WEB.HDR10.x265-GROUP
+  expected: false
+- id: 8
+  input: Movie.2024.2160p.WEB.HDR.x265-GROUP
+  expected: false

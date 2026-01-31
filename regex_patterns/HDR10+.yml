@@ -5,3 +5,19 @@ tags:
   - HDR
   - Colour Grade
   - Enhancement
+tests:
+- id: 1
+  input: Movie.2024.2160p.WEB.HDR10Plus.x265-GROUP
+  expected: true
+- id: 2
+  input: Movie.2024.2160p.WEB.HDR10+.x265-GROUP
+  expected: true
+- id: 3
+  input: Movie.2024.2160p.WEB.hdr10plus.x265-GROUP
+  expected: true
+- id: 4
+  input: Movie.2024.2160p.WEB.HDR10.x265-GROUP
+  expected: false
+- id: 5
+  input: Movie.2024.2160p.WEB.HDR.x265-GROUP
+  expected: false
