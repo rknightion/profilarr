@@ -61,8 +61,6 @@ custom_formats:
 custom_formats_radarr: []
 custom_formats_sonarr: []
 qualities:
-- id: 3
-  name: Remux-2160p
 - id: 4
   name: Bluray-2160p
 - id: 5
@@ -72,7 +70,7 @@ qualities:
 - id: 7
   name: HDTV-2160p
 upgrade_until:
-  id: 4
-  name: Bluray-2160p
-  description: 4K Ultra HD Blu-ray video encoded with lossy compression
+  id: 5
+  name: WEBDL-2160p
+  description: 4K web download, untouched as released by the streaming service
 language: original
