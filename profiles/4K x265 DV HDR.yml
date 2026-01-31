@@ -61,16 +61,19 @@ custom_formats:
 custom_formats_radarr: []
 custom_formats_sonarr: []
 qualities:
-- id: 4
-  name: Bluray-2160p
-- id: 5
-  name: WEBDL-2160p
+- id: -1
+  name: Good 4k
+  description: ''
+  qualities:
+  - id: 4
+    name: Bluray-2160p
+  - id: 5
+    name: WEBDL-2160p
 - id: 6
   name: WEBRip-2160p
 - id: 7
   name: HDTV-2160p
 upgrade_until:
-  id: 5
-  name: WEBDL-2160p
-  description: 4K web download, untouched as released by the streaming service
+  id: -1
+  name: Good 4k
 language: original
