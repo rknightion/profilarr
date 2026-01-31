@@ -1,6 +1,15 @@
 name: x264 AVC
+<<<<<<< HEAD
 pattern: '(?i)\b(x[\.\s]?264|h[\.\s]?264|avc)\b'
 description: "Matches x264/H.264/AVC codec releases"
+=======
+pattern: (?i)\b(x264|h\.?264|avc)\b
+description: Matches x264/H.264/AVC codec releases
+>>>>>>> 5f1c91b (tweak: update)
 tags:
-  - Codec
-  - Encoder
+- Codec
+- Encoder
+tests:
+- id: 1
+  input: Peter.Pan.and.Wendy.2023.1080p.DSNP.WEB-DL.DDP5.1.Atmos.H.264-CMRG.mkv
+  expected: true
