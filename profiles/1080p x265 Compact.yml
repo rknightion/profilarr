@@ -12,15 +12,15 @@ minScoreIncrement: 50
 custom_formats:
 - name: DD+ Atmos
   score: 100
+- name: DV HDR10 Compatible
+  score: 100
 - name: x265 HEVC
   score: 100
 - name: 10-bit
   score: 50
-- name: DV HDR10 Compatible
+- name: HDR10Plus
   score: 50
 - name: DDP 5.1
-  score: 25
-- name: HDR10Plus
   score: 25
 - name: PROPER REPACK
   score: 25
@@ -42,8 +42,6 @@ custom_formats:
   score: -50
 - name: TrueHD Atmos AVOID
   score: -75
-- name: DV No Fallback P5 AVOID
-  score: -200
 - name: No x265 Detected
   score: -200
 - name: 4k
@@ -60,8 +58,12 @@ custom_formats:
   score: -10000
 - name: Unwanted Codecs BLOCK
   score: -10000
-custom_formats_radarr: []
-custom_formats_sonarr: []
+custom_formats_radarr:
+- name: DV No Fallback P5 AVOID
+  score: -300
+custom_formats_sonarr:
+- name: DV No Fallback P5 AVOID
+  score: -200
 qualities:
 - id: 10
   name: Bluray-1080p

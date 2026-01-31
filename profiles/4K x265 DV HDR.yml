@@ -16,10 +16,10 @@ custom_formats:
   score: 150
 - name: DD+ Atmos
   score: 100
+- name: HDR10
+  score: 100
 - name: HDR10Plus
   score: 100
-- name: HDR10
-  score: 75
 - name: Trusted Movie Groups
   score: 50
 - name: Trusted TV Groups
