@@ -32,6 +32,8 @@ custom_formats:
   score: 25
 - name: 5.1 Surround
   score: 10
+- name: 4k
+  score: 1
 - name: DTS All AVOID
   score: -100
 - name: Lossless Audio AVOID
@@ -42,6 +44,8 @@ custom_formats:
   score: -200
 - name: DV No Fallback P5 AVOID
   score: -200
+- name: 1080p
+  score: -10000
 - name: Bad Dual Groups
   score: -10000
 - name: Language Not English

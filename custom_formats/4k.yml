@@ -1,0 +1,12 @@
+name: 4k
+description: ''
+tags:
+- Resolution
+- UHD
+conditions:
+- name: resolution
+  type: resolution
+  required: true
+  negate: false
+  resolution: 2160p
+tests: []
