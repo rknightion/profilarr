@@ -1,11 +1,6 @@
 name: x265 HEVC
-<<<<<<< HEAD
 pattern: '(?i)\b(x[\.\s]?265|h[\.\s]?265|hevc)\b'
 description: "Matches x265/H.265/HEVC codec releases"
-=======
-pattern: (?i)(x265|h\.?265|hevc)
-description: Matches x265/H.265/HEVC codec releases
->>>>>>> 5f1c91b (tweak: update)
 tags:
 - Codec
 - Encoder
