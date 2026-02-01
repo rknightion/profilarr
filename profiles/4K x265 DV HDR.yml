@@ -35,14 +35,16 @@ custom_formats:
 - name: 4k
   score: 1
 - name: DTS All AVOID
-  score: -100
+  score: -150
 - name: Lossless Audio AVOID
-  score: -100
+  score: -150
 - name: TrueHD Atmos AVOID
-  score: -100
+  score: -150
 - name: Dubbed Audio Title
-  score: -200
+  score: -10000
 - name: DV No Fallback P5 AVOID
+  score: -200
+- name: No x265 Detected
   score: -200
 - name: 1080p
   score: -10000
