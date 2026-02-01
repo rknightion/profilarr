@@ -36,8 +36,6 @@ custom_formats:
   score: 1
 - name: DTS All AVOID
   score: -150
-- name: Dubbed Audio Title
-  score: -10000
 - name: Lossless Audio AVOID
   score: -150
 - name: TrueHD Atmos AVOID
@@ -47,6 +45,8 @@ custom_formats:
 - name: 4k
   score: -10000
 - name: Bad Dual Groups
+  score: -10000
+- name: Dubbed Audio Title
   score: -10000
 - name: Language Not English
   score: -10000
@@ -73,8 +73,8 @@ qualities:
     name: Bluray-1080p
   - id: 9
     name: WEBDL-1080p
-- id: 11
-  name: WEBRip-1080p
+  - id: 11
+    name: WEBRip-1080p
 - id: 12
   name: HDTV-1080p
 - id: 30
