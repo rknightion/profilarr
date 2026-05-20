@@ -1,0 +1,25 @@
+-- @operation: update
+-- @entity: radarr_quality_definitions
+-- @name: Align Radarr quality definitions to Sonarr (compact)
+update "radarr_quality_definitions" set "min_size" = 2, "max_size" = 60, "preferred_size" = 18 where "name" = 'default' and "quality_name" = 'Bluray-1080p' and "min_size" = 5 and "max_size" = 102 and "preferred_size" = 51;
+update "radarr_quality_definitions" set "min_size" = 4.5, "max_size" = 180, "preferred_size" = 16 where "name" = 'default' and "quality_name" = 'Bluray-2160p' and "min_size" = 20 and "max_size" = 250 and "preferred_size" = 120;
+update "radarr_quality_definitions" set "min_size" = 2, "max_size" = 40, "preferred_size" = 18 where "name" = 'default' and "quality_name" = 'Bluray-480p' and "min_size" = 0 and "max_size" = 100 and "preferred_size" = 95;
+update "radarr_quality_definitions" set "min_size" = 2, "max_size" = 40, "preferred_size" = 18 where "name" = 'default' and "quality_name" = 'Bluray-576p' and "min_size" = 0 and "max_size" = 100 and "preferred_size" = 95;
+update "radarr_quality_definitions" set "min_size" = 4, "max_size" = 40, "preferred_size" = 18 where "name" = 'default' and "quality_name" = 'Bluray-720p' and "min_size" = 0 and "max_size" = 100 and "preferred_size" = 95;
+update "radarr_quality_definitions" set "min_size" = 2, "max_size" = 40, "preferred_size" = 18 where "name" = 'default' and "quality_name" = 'DVD' and "min_size" = 0 and "max_size" = 100 and "preferred_size" = 95;
+update "radarr_quality_definitions" set "min_size" = 2, "max_size" = 60, "preferred_size" = 18 where "name" = 'default' and "quality_name" = 'HDTV-1080p' and "min_size" = 5 and "max_size" = 102 and "preferred_size" = 51;
+update "radarr_quality_definitions" set "min_size" = 4.5, "max_size" = 180, "preferred_size" = 18 where "name" = 'default' and "quality_name" = 'HDTV-2160p' and "min_size" = 20 and "max_size" = 250 and "preferred_size" = 80;
+update "radarr_quality_definitions" set "min_size" = 3, "max_size" = 40, "preferred_size" = 18 where "name" = 'default' and "quality_name" = 'HDTV-720p' and "min_size" = 0 and "max_size" = 100 and "preferred_size" = 95;
+update "radarr_quality_definitions" set "min_size" = 5, "max_size" = 60, "preferred_size" = 18 where "name" = 'default' and "quality_name" = 'Raw-HD' and "min_size" = 20 and "max_size" = 250 and "preferred_size" = 150;
+update "radarr_quality_definitions" set "min_size" = 2, "max_size" = 60, "preferred_size" = 18 where "name" = 'default' and "quality_name" = 'Remux-1080p' and "min_size" = 0 and "max_size" = 102 and "preferred_size" = 20;
+update "radarr_quality_definitions" set "min_size" = 4.5, "max_size" = 180, "preferred_size" = 16 where "name" = 'default' and "quality_name" = 'Remux-2160p' and "min_size" = 20 and "max_size" = 250 and "preferred_size" = 150;
+update "radarr_quality_definitions" set "min_size" = 2, "max_size" = 40, "preferred_size" = 18 where "name" = 'default' and "quality_name" = 'SDTV' and "min_size" = 0 and "max_size" = 100 and "preferred_size" = 95;
+update "radarr_quality_definitions" set "min_size" = 1, "max_size" = 60, "preferred_size" = 18 where "name" = 'default' and "quality_name" = 'Unknown' and "min_size" = 0 and "max_size" = 100 and "preferred_size" = 95;
+update "radarr_quality_definitions" set "min_size" = 2, "max_size" = 60, "preferred_size" = 18 where "name" = 'default' and "quality_name" = 'WEBDL-1080p' and "min_size" = 5 and "max_size" = 102 and "preferred_size" = 51;
+update "radarr_quality_definitions" set "min_size" = 4.5, "max_size" = 180, "preferred_size" = 16 where "name" = 'default' and "quality_name" = 'WEBDL-2160p' and "min_size" = 20 and "max_size" = 250 and "preferred_size" = 80;
+update "radarr_quality_definitions" set "min_size" = 2, "max_size" = 40, "preferred_size" = 18 where "name" = 'default' and "quality_name" = 'WEBDL-480p' and "min_size" = 0 and "max_size" = 100 and "preferred_size" = 95;
+update "radarr_quality_definitions" set "min_size" = 3, "max_size" = 40, "preferred_size" = 18 where "name" = 'default' and "quality_name" = 'WEBDL-720p' and "min_size" = 0 and "max_size" = 100 and "preferred_size" = 95;
+update "radarr_quality_definitions" set "min_size" = 2, "max_size" = 60, "preferred_size" = 18 where "name" = 'default' and "quality_name" = 'WEBRip-1080p' and "min_size" = 5 and "max_size" = 102 and "preferred_size" = 51;
+update "radarr_quality_definitions" set "min_size" = 4.5, "max_size" = 180, "preferred_size" = 16 where "name" = 'default' and "quality_name" = 'WEBRip-2160p' and "min_size" = 20 and "max_size" = 250 and "preferred_size" = 90;
+update "radarr_quality_definitions" set "min_size" = 2, "max_size" = 40, "preferred_size" = 18 where "name" = 'default' and "quality_name" = 'WEBRip-480p' and "min_size" = 0 and "max_size" = 100 and "preferred_size" = 95;
+update "radarr_quality_definitions" set "min_size" = 3, "max_size" = 40, "preferred_size" = 18 where "name" = 'default' and "quality_name" = 'WEBRip-720p' and "min_size" = 0 and "max_size" = 100 and "preferred_size" = 95;
