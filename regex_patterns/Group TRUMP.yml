@@ -1,6 +1,0 @@
-name: Group TRUMP
-pattern: '^(TRUMP)$'
-description: "Matches TRUMP release group"
-tags:
-  - ReleaseGroup
-  - LQ

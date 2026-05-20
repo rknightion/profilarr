@@ -1,5 +1,0 @@
-name: Multi
-pattern: '(?i)\b(MULTi)\b'
-description: "Matches multi-language releases"
-tags:
-  - Language

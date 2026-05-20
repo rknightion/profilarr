@@ -1,6 +1,0 @@
-name: Group BONE
-pattern: '^(BONE)$'
-description: "Matches BONE release group"
-tags:
-  - ReleaseGroup
-  - BadDual

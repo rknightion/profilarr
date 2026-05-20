@@ -1,5 +1,0 @@
-name: MPEG-2
-pattern: '(?i)\b(MPEG-?2)\b'
-description: "Matches MPEG-2 codec releases"
-tags:
-  - Codec

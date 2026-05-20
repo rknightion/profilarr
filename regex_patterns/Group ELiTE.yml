@@ -1,6 +1,0 @@
-name: Group ELiTE
-pattern: '^(ELiTE)$'
-description: "Matches ELiTE release group"
-tags:
-  - ReleaseGroup
-  - Trusted

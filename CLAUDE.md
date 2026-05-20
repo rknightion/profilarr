@@ -4,41 +4,41 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a YAML configuration database for Radarr and Sonarr media servers, designed for use with Profilarr v1. It contains quality profiles, custom formats, and regex patterns optimized for x265 compact releases and 4K HDR content.
+This is a **Profilarr v2 Compliant Database (PCD)** for Radarr/Sonarr — curated x265 / 4K‑HDR quality profiles, custom formats, and regex patterns. It is consumed by **Profilarr v2** (not v1).
 
-**No build system, tests, or linting** - this is a pure YAML configuration repository with no code to compile or validate.
+A PCD is **Operational SQL (OSQL)**: the database is defined as an ordered, append‑only sequence of SQL operations that build the state by replay — not as stateful YAML. Migrated from the former v1 YAML layout via [`rosettarr`](https://github.com/Dictionarry-Hub/rosettarr); that snapshot is preserved at git tag **`v1-final`**.
 
 ## Repository Structure
 
 ```
-custom_formats/     # Custom format definitions that reference regex patterns
-regex_patterns/     # Reusable regex pattern definitions
-profiles/           # Quality profiles for Radarr/Sonarr (1080p and 4K variants)
-media_management/   # Naming conventions and quality definitions
+pcd.json    # manifest — name, version, arr_types, dependency on the `schema` PCD, profilarr.minimum_version
+ops/        # ordered, append-only OSQL files (N.name.sql) — the database content
+tweaks/     # optional variant operations
 ```
 
-## Key Conventions
+The table schema (DDL), base languages, and canonical qualities are provided by the **`schema`** dependency (`https://github.com/Dictionarry-Hub/schema`) declared in `pcd.json` — not stored in this repo.
 
-### File Naming
-- **Filename must exactly match the `name` field** inside the YAML file
-- Spaces in filenames are allowed and expected (e.g., `x265 HEVC.yml`)
+## How changes are made
 
-### Pattern Reference System
-Custom formats reference regex patterns by name. The `pattern` field in a custom format condition matches a regex pattern file:
+- **Author edits in the Profilarr v2 app**, then export them as new numbered `ops/*.sql` (each carries `@operation` / `@opIds` headers) and commit. This is "Change‑Driven Development": every change is one append‑only operation; later ops override earlier ones; expected‑value guards (e.g. `... AND score = 400`) make conflicts explicit.
+- **Do not** hand‑edit or recreate the old v1 YAML directories — they have been removed (recoverable from tag `v1-final`).
+- `ops/1.initial.sql` is the rosettarr‑generated initial import of the entire v1 database.
 
-```yaml
-# In custom_formats/x265 HEVC.yml
-conditions:
-  - pattern: x265 HEVC    # References regex_patterns/x265 HEVC.yml
+## Validate locally (no build system)
+
+To check the OSQL composes cleanly, build a throwaway SQLite DB from the `schema` PCD's ops, then this repo's ops, and run `PRAGMA foreign_key_check;` (expect empty output):
+
+```bash
+git clone --depth 1 https://github.com/Dictionarry-Hub/schema /tmp/pcd-schema
+DB=/tmp/verify.db; rm -f "$DB"
+for f in 0.schema 1.languages 2.qualities 3.quality-group-member-position; do
+  sqlite3 "$DB" < /tmp/pcd-schema/ops/$f.sql; done
+sqlite3 "$DB" < ops/1.initial.sql
+sqlite3 "$DB" "PRAGMA foreign_key_check;"
 ```
 
-### Score-Based Filtering
-Profiles use scores to control release selection:
-- Positive scores (1-100): Preferred releases
-- Negative scores (-50 to -200): Avoided releases
-- Score -10000: Hard block (never download)
+## Conventions (for reading the data)
 
-### YAML Format
-- Use single quotes for regex patterns: `pattern: '(?i)(x265|hevc)'`
-- All regexes should be case-insensitive using `(?i)` prefix
-- Custom formats include empty `tests: []` placeholder
+- **Scores**: positive = preferred; negative = avoided; `-10000` = hard block (never download).
+- Profiles assign per‑arr custom‑format scores via `quality_profile_custom_formats.arr_type` (`all` / `radarr` / `sonarr`).
+- Custom‑format, quality, and language names must match the canonical names defined by the `schema` PCD.

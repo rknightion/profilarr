@@ -1,6 +1,0 @@
-name: Group d3g
-pattern: '^(d3g)$'
-description: "Matches d3g release group"
-tags:
-  - ReleaseGroup
-  - Trusted

@@ -1,6 +1,0 @@
-name: Group PSA
-pattern: '^(PSA)$'
-description: "Matches PSA release group"
-tags:
-  - ReleaseGroup
-  - Trusted

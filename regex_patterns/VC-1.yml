@@ -1,5 +1,0 @@
-name: VC-1
-pattern: '(?i)\b(VC-?1)\b'
-description: "Matches VC-1 codec releases"
-tags:
-  - Codec

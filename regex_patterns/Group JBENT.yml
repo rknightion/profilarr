@@ -1,6 +1,0 @@
-name: Group JBENT
-pattern: '^(JBENT)$'
-description: "Matches JBENT release group"
-tags:
-  - ReleaseGroup
-  - Trusted

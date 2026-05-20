@@ -1,6 +1,0 @@
-name: Group SiGMA
-pattern: '^(SiGMA)$'
-description: "Matches SiGMA release group"
-tags:
-  - ReleaseGroup
-  - BadDual

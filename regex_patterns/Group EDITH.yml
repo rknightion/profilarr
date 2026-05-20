@@ -1,6 +1,0 @@
-name: Group EDITH
-pattern: '^(EDITH)$'
-description: "Matches EDITH release group"
-tags:
-  - ReleaseGroup
-  - Trusted

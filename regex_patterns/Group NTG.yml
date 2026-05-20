@@ -1,6 +1,0 @@
-name: Group NTG
-pattern: '^(NTG)$'
-description: "Matches NTG release group"
-tags:
-  - ReleaseGroup
-  - Trusted

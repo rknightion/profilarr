@@ -1,6 +1,0 @@
-name: Group MeGusta
-pattern: '^(MeGusta)$'
-description: "Matches MeGusta release group"
-tags:
-  - ReleaseGroup
-  - Trusted

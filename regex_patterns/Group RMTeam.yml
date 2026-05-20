@@ -1,6 +1,0 @@
-name: Group RMTeam
-pattern: '^(RMTeam)$'
-description: "Matches RMTeam release group"
-tags:
-  - ReleaseGroup
-  - Trusted

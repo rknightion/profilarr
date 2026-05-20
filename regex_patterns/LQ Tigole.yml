@@ -1,5 +1,0 @@
-name: LQ Tigole
-pattern: '(?i)\b(Tigole)\b'
-description: "Matches Tigole releases"
-tags:
-  - Banned

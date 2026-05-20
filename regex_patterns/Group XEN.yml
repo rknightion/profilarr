@@ -1,6 +1,0 @@
-name: Group XEN
-pattern: '^(XEN)$'
-description: "Matches XEN release group"
-tags:
-  - ReleaseGroup
-  - BadDual

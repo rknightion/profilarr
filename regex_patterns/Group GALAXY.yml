@@ -1,6 +1,0 @@
-name: Group GALAXY
-pattern: '^(GALAXY)$'
-description: "Matches GALAXY release group"
-tags:
-  - ReleaseGroup
-  - BadDual

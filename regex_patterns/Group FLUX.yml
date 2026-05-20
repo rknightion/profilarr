@@ -1,6 +1,0 @@
-name: Group FLUX
-pattern: '^(FLUX)$'
-description: "Matches FLUX release group"
-tags:
-  - ReleaseGroup
-  - Trusted

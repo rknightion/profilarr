@@ -1,6 +1,0 @@
-name: Group AMIABLE
-pattern: '^(AMIABLE)$'
-description: "Matches AMIABLE release group"
-tags:
-  - ReleaseGroup
-  - LQ

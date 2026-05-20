@@ -1,6 +1,0 @@
-name: Group TERMiNAL
-pattern: '^(TERMiNAL)$'
-description: "Matches TERMiNAL release group"
-tags:
-  - ReleaseGroup
-  - LQ

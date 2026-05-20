@@ -1,6 +1,0 @@
-name: Group SPARKS
-pattern: '^(SPARKS)$'
-description: "Matches SPARKS release group"
-tags:
-  - ReleaseGroup
-  - LQ

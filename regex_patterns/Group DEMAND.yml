@@ -1,6 +1,0 @@
-name: Group DEMAND
-pattern: '^(DEMAND)$'
-description: "Matches DEMAND release group"
-tags:
-  - ReleaseGroup
-  - LQ

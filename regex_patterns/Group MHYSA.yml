@@ -1,6 +1,0 @@
-name: Group MHYSA
-pattern: '^(MHYSA)$'
-description: "Matches MHYSA release group"
-tags:
-  - ReleaseGroup
-  - Trusted

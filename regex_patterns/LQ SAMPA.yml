@@ -1,5 +1,0 @@
-name: LQ SAMPA
-pattern: '(?i)\b(SAMPA)\b'
-description: "Matches SAMPA releases"
-tags:
-  - Banned

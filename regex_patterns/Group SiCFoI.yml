@@ -1,6 +1,0 @@
-name: Group SiCFoI
-pattern: '^(SiCFoI)$'
-description: "Matches SiCFoI release group"
-tags:
-  - ReleaseGroup
-  - Trusted

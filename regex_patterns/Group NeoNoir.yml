@@ -1,6 +1,0 @@
-name: Group NeoNoir
-pattern: '^(NeoNoir)$'
-description: "Matches NeoNoir release group"
-tags:
-  - ReleaseGroup
-  - Trusted

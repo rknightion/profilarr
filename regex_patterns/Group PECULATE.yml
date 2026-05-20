@@ -1,6 +1,0 @@
-name: Group PECULATE
-pattern: '^(PECULATE)$'
-description: "Matches PECULATE release group"
-tags:
-  - ReleaseGroup
-  - Trusted

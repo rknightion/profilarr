@@ -1,6 +1,0 @@
-name: Group HONE
-pattern: '^(HONE)$'
-description: "Matches HONE release group"
-tags:
-  - ReleaseGroup
-  - Trusted

@@ -1,6 +1,0 @@
-name: Group DON
-pattern: '^(DON)$'
-description: "Matches DON release group"
-tags:
-  - ReleaseGroup
-  - Trusted

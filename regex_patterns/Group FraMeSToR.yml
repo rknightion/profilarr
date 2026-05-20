@@ -1,6 +1,0 @@
-name: Group FraMeSToR
-pattern: '^(FraMeSToR)$'
-description: "Matches FraMeSToR release group"
-tags:
-  - ReleaseGroup
-  - Trusted

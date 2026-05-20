@@ -1,0 +1,13 @@
+{
+  "name": "rk-profilarr-db",
+  "version": "1.0.0",
+  "description": "Rob's curated x265 / 4K HDR quality profiles, custom formats, and regex for Radarr/Sonarr",
+  "arr_types": ["radarr", "sonarr"],
+  "dependencies": {
+    "https://github.com/Dictionarry-Hub/schema": "1.1.0"
+  },
+  "authors": [{ "name": "Rob Knight" }],
+  "license": "MIT",
+  "repository": "https://github.com/rknightion/profilarr",
+  "profilarr": { "minimum_version": "2.0.0" }
+}

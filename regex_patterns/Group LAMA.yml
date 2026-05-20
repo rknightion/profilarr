@@ -1,6 +1,0 @@
-name: Group LAMA
-pattern: '^(LAMA)$'
-description: "Matches LAMA release group"
-tags:
-  - ReleaseGroup
-  - Trusted

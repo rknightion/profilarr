@@ -1,6 +1,0 @@
-name: Group TOMMY
-pattern: '^(TOMMY)$'
-description: "Matches TOMMY release group"
-tags:
-  - ReleaseGroup
-  - Trusted

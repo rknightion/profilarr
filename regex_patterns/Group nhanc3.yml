@@ -1,6 +1,0 @@
-name: Group nhanc3
-pattern: '^(nhanc3)$'
-description: "Matches nhanc3 release group"
-tags:
-  - ReleaseGroup
-  - LQ

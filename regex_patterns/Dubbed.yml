@@ -1,6 +1,0 @@
-name: Dubbed
-pattern: '(?i)\b(dubbed)\b'
-description: "Matches dubbed releases"
-tags:
-  - Audio
-  - Language

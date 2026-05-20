@@ -1,5 +1,0 @@
-name: LQ STARZ
-pattern: '(?<!-)\b(STARZ)\b(?![-_. ]?ENCO)'
-description: "Matches STARZ watermark releases"
-tags:
-  - Banned

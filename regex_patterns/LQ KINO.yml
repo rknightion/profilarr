@@ -1,5 +1,0 @@
-name: LQ KINO
-pattern: '(?i)\b(KINO)\b'
-description: "Matches KINO releases"
-tags:
-  - Banned

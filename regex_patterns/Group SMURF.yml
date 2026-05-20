@@ -1,6 +1,0 @@
-name: Group SMURF
-pattern: '^(SMURF)$'
-description: "Matches SMURF release group"
-tags:
-  - ReleaseGroup
-  - Trusted

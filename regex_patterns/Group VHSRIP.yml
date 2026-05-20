@@ -1,6 +1,0 @@
-name: Group VHSRIP
-pattern: '^(VHSRIP)$'
-description: "Matches VHSRIP release group"
-tags:
-  - ReleaseGroup
-  - BadDual

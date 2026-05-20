@@ -1,6 +1,0 @@
-name: Group CtrlHD
-pattern: '^(CtrlHD)$'
-description: "Matches CtrlHD release group"
-tags:
-  - ReleaseGroup
-  - Trusted
