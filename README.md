@@ -1,5 +1,7 @@
 # rk-profilarr-db
 
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/rknightion/profilarr/badge)](https://scorecard.dev/viewer/?uri=github.com/rknightion/profilarr)
+
 A curated **Profilarr Compliant Database (PCD)** of x265 / 4K‑HDR quality profiles, custom formats, and regex patterns for **Radarr** and **Sonarr**.
 
 Built for **Profilarr v2** (`minimum_version` 2.0.0). The legacy v1 YAML version is preserved at the **`v1-final`** git tag.
