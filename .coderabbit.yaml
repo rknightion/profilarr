@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+# Product-specific additions to the central CodeRabbit defaults.
+# Keep inheritance enabled; shared review policy lives in the owner/coderabbit repository.
+inheritance: true
+reviews:
+  path_instructions:
+  - path: ops/**
+    instructions: >-
+      Treat these files as an ordered append-only Operational SQL event stream. Existing numbered operations,
+      especially ops/1.initial.sql, are immutable history; changes must be new monotonically numbered
+      operations with the required operation headers. Check replay order, foreign keys, idempotence assumptions,
+      and expected-value guards that make conflicts explicit. Validate custom-format, quality, and language
+      names against the declared schema PCD. Do not request in-place edits, stateful YAML, conventional
+      down migrations, or rollback scripts.
+  - path: tweaks/**
+    instructions: >-
+      Review tweaks as optional operations layered onto the same schema-backed database. Preserve append-only
+      ordering and ensure a tweak composes after the base operation stream without depending on undeclared
+      local schema objects or noncanonical names.
+  - path: pcd.json
+    instructions: >-
+      Treat this as the consumer manifest. Check dependency version, supported arr_types, repository identity,
+      and profilarr.minimum_version together with any SQL features introduced by the change.
