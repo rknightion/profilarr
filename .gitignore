@@ -1,2 +1,5 @@
 
 .DS_Store
+
+# loop-pi (pi-subagents writes .pi/subagents/)
+.pi/
