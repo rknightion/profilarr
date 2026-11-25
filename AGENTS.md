@@ -46,13 +46,3 @@ you just added.
 - **Scores**: positive = preferred, negative = avoided, `-10000` = hard block (never download).
 - Profiles assign per-arr custom-format scores through
   `quality_profile_custom_formats.arr_type` (`all` / `radarr` / `sonarr`).
-
-## Cursor Cloud specific instructions
-
-The base image supplies Python 3. Checking the manifest requires no dependency
-setup. Run `python3 -m json.tool pcd.json > /dev/null` for both a quick check and
-the full CI gate.
-
-For changes to SQL operations, also replay the schema version pinned in
-`pcd.json` and all repository operations in numeric order in a throwaway
-SQLite database. Use a workspace with SQLite and access to the schema.
